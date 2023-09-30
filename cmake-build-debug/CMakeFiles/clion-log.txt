@@ -1,0 +1,23 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork
+-- The CXX compiler identification is AppleClang 10.0.1.10010046
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+<FindSDL2.cmake>
+</FindSDL2.cmake>
+-- Found SDL2: /Library/Frameworks/SDL2.framework;-framework Cocoa  
+<FindSDL2_image.cmake>
+-- Found SDL2_image: /Library/Frameworks/SDL2_image.framework (found version "..") 
+</FindSDL2_image.cmake>
+<FindSDL2_mixer.cmake>
+</FindSDL2_mixer.cmake>
+<FindSDL2.cmake>
+</FindSDL2.cmake>
+<FindSDL2_image.cmake>
+</FindSDL2_image.cmake>
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug

@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
+set(CMAKE_OSX_ARCHITECTURES "x86_64")
 project(SimpleRenderEngineProject CXX)
 
 set( CMAKE_VERBOSE_MAKEFILE on )
@@ -189,3 +190,6 @@ SET(USE_SRE_PROJECT_EXAMPLES ON CACHE BOOL "Enable project examples for SRE")
 if (USE_SRE_PROJECT_EXAMPLES)
 add_subdirectory(project)
 endif(USE_SRE_PROJECT_EXAMPLES)
+
+add_subdirectory(Exercise3)
+add_subdirectory(Exercise4)
