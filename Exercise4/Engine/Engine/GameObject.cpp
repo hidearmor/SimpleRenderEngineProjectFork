@@ -80,8 +80,11 @@ namespace MyEngine {
 		Size = newSize;
 	}
 
-/*
+	std::shared_ptr<Component> GameObject::GetFirstComponent(){
+		std::shared_ptr<Component> comp = _components.front();
+	}
 
+/*
     void GameObject::addObserver(std::shared_ptr<Observer> observer) {
         observers.push_back(observer);
     }

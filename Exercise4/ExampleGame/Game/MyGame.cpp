@@ -28,7 +28,7 @@ namespace ExampleGame {
 
         atlas = sre::SpriteAtlas::create("data/Asteroids.json", "data/Asteroids.png");
 
-        CreatePlayer();
+        player = CreatePlayer();
 
         asteroidsParent = engine.CreateGameObject("asteroidsParent");
         lazerParent = engine.CreateGameObject("lazersParent");
@@ -37,7 +37,7 @@ namespace ExampleGame {
         renderer.startEventLoop();
     }
 
-    void MyGame::CreatePlayer() {
+    std::shared_ptr<MyEngine::GameObject> MyGame::CreatePlayer() {
         // create player
         std::shared_ptr<MyEngine::GameObject> playerObject = engine.CreateGameObject("Player");
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
@@ -51,6 +51,8 @@ namespace ExampleGame {
         glm::vec2 scale = glm::vec2(0.6, 0.6);
         componentRenderer->sprite.setScale(scale);
         componentController->SetRotationSpeed(0);
+        componentController->SetMovementSpeed(0);
+        return playerObject;
     }
 
     void MyGame::InstantiateAsteroid(int time) {
@@ -62,14 +64,12 @@ namespace ExampleGame {
         gameObject->AddComponent(componentController);
         gameObject->AddComponent(componentRenderer);
         componentRenderer->sprite = atlas->get("meteorBrown_big1.png");
-        componentController->SetRotationSpeed(100);
+        componentController->SetRotationSpeed(-100);
         componentController->Init();
         componentController->RandomPosition();
     }
 
     bool MyGame::onKey(SDL_Event &event) {
-//        if(event.type == SDL_KEYDOWN){
-
             switch (event.key.keysym.sym) {
                 case SDLK_SPACE: {
                     InstantiateAsteroid(1);
@@ -77,10 +77,12 @@ namespace ExampleGame {
                     break;
                 case SDLK_LEFT: {
                     //left = event.type == SDL_KEYDOWN;
+                    //player->rotation = 0.0;
                 }
                     break;
                 case SDLK_RIGHT: {
                     //right = event.type == SDL_KEYDOWN;
+                    //player->rotation = 0.5;
                 }
                     break;
                 case SDLK_x : {
@@ -94,8 +96,6 @@ namespace ExampleGame {
                     break;
                 default: break;
             }
-//        }
-
         return false;
     }
 
@@ -104,6 +104,7 @@ namespace ExampleGame {
             //std::cout << "Process events" << std::endl;
             onKey(event);
         }
+        engine.ProcessEvents(event);
     }
 
     void MyGame::Update(float deltaTime) {

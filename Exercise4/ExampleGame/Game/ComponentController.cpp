@@ -6,8 +6,8 @@
 namespace ExampleGame {
 	ComponentController::ComponentController(bool rotate){
 		ShouldRotate = rotate;
-		RotSpeed = 10;
-		MovSpeed = 200;
+		RotSpeed = 0;
+		MovSpeed = 100;
 		MovAmount = 1;
 		MovDirection = glm::vec2(0, 1);
 	}
@@ -22,10 +22,17 @@ namespace ExampleGame {
 		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
 		MyEngine::GameObject* parent = GetGameObject();
 
+		float smoothRotSpeed = 0.016666667f;
+		//parent->rotation += smoothRotSpeed * RotSpeed * deltaTime;
 		if(ShouldRotate) parent->rotation += RotSpeed * deltaTime;
+		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x);
+		// Convert rotation to direction vector
+		//MovDirection = glm::vec2(cos(smoothRotSpeed * parent->rotation), sin(smoothRotSpeed * parent->rotation));
 		parent->position += MovDirection * MovAmount * MovSpeed * deltaTime;
 
 		// reset position
+
+
 
 		if (parent->position.x > engine->GetScreenSize().x) {
 			parent->position.x = 0;
@@ -62,6 +69,35 @@ namespace ExampleGame {
 
 	void ComponentController::SetMovementDirection(glm::vec2 direction)
 	{
+		//parent->rotation += std::atan2(direction.y, direction.x);
+	}
+
+	void ComponentController::SetMovementSpeed(float speed) {
+		MovSpeed = speed;
+	}
+
+	void ComponentController::KeyEvent(SDL_Event &event) {
+		std::cout << "KeyEvent controller" << std::endl;
+
+		switch (event.key.keysym.sym) {
+
+			case SDLK_a: {
+				if(event.type == SDL_KEYDOWN) 		SetRotationSpeed(100);
+				else if (event.type == SDL_KEYUP) 	SetRotationSpeed(0);
+			}
+				break;
+			case SDLK_d: {
+				if(event.type == SDL_KEYDOWN) 		SetRotationSpeed(-100);
+				else if (event.type == SDL_KEYUP) 	SetRotationSpeed(0);
+			}
+				break;
+			case SDLK_w : {
+				if(event.type == SDL_KEYDOWN) 		SetMovementSpeed(150);
+				else if (event.type == SDL_KEYUP) 	SetMovementSpeed(0);
+			}
+				break;
+			default: break;
+		}
 
 	}
 

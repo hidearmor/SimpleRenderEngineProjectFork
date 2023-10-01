@@ -30,6 +30,7 @@ namespace MyEngine {
         void RemoveChild(std::shared_ptr<GameObject> p_object);
         void RemoveChildren();
 		void AddComponent(std::shared_ptr<Component>);
+        std::shared_ptr<Component> GetFirstComponent();
 
 		std::string GetName();
 		void SetName(std::string);

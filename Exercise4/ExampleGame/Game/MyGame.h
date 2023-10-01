@@ -24,7 +24,7 @@ class MyGame {
 
         void Render();
 
-        void CreatePlayer();
+        std::shared_ptr<MyEngine::GameObject> CreatePlayer();
 
         bool onKey(SDL_Event &event);
 
@@ -45,7 +45,9 @@ class MyGame {
     private:
         std::shared_ptr<MyEngine::GameObject> asteroidsParent;
         std::shared_ptr<MyEngine::GameObject> lazerParent;
+        std::shared_ptr<MyEngine::GameObject> player;
         void RemoveAsteroids();
         static MyGame* _instance;
+
     };
 }
