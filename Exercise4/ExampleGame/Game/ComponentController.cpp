@@ -24,7 +24,8 @@ namespace ExampleGame {
 
 		float smoothRotSpeed = 0.016666667f;
 		//parent->rotation += smoothRotSpeed * RotSpeed * deltaTime;
-		if(ShouldRotate) parent->rotation += RotSpeed * deltaTime;
+		//if(ShouldRotate)
+			parent->rotation += RotSpeed * deltaTime;
 		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x);
 		// Convert rotation to direction vector
 		//MovDirection = glm::vec2(cos(smoothRotSpeed * parent->rotation), sin(smoothRotSpeed * parent->rotation));
