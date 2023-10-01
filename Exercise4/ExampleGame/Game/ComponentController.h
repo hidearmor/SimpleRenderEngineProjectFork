@@ -4,12 +4,13 @@
 
 namespace ExampleGame {
 	class ComponentController : public MyEngine::Component {
-		const float RotSpeed = 50;
-		const float MovSpeed = 5;
-		const float MovAmount = 10;
-		const glm::vec2 MovDirection = glm::vec2(1, 0);
+		float MovSpeed;
+		float MovAmount;
+		glm::vec2 MovDirection;
 
 	public:
+		float RotSpeed;
+		ComponentController();
 		glm::vec2 position;
 		float rotaiton;
 

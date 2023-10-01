@@ -21,7 +21,6 @@ namespace MyEngine {
 		float rotation;
 		float Size = 1;
 		void setSize(float newSize);
-		void DeleteAfterSeconds(int seconds);
 		void Init();
 		void Update(float);
 		void Render(sre::SpriteBatch::SpriteBatchBuilder&);

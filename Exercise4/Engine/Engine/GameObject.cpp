@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <memory>
+#include <future>
 #include <thread>
 #include <chrono>
 
@@ -78,11 +79,8 @@ namespace MyEngine {
 	void GameObject::setSize(float newSize){
 		Size = newSize;
 	}
+
 /*
-	void GameObject::DeleteAfterSeconds(int seconds) {
-		std::this_thread::sleep_for(std::chrono::seconds(seconds));
-		GameObject::notifyObservers();
-	}
 
     void GameObject::addObserver(std::shared_ptr<Observer> observer) {
         observers.push_back(observer);

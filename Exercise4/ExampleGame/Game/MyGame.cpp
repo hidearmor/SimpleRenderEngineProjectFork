@@ -30,8 +30,6 @@ namespace ExampleGame {
 
         CreatePlayer();
 
-//      gameObjects["Asteroids"].push_back({});
-//      gameObjects["Lazers"].push_back({});
         asteroidsParent = engine.CreateGameObject("asteroidsParent");
         lazerParent = engine.CreateGameObject("lazersParent");
 
@@ -52,16 +50,12 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get("playerShip3_orange.png");
         glm::vec2 scale = glm::vec2(0.6, 0.6);
         componentRenderer->sprite.setScale(scale);
-
-        //playerObject = std::make_shared<MyEngine::GameObject>(new MyEngine::GameObject());;
-        playerObject.reset();
-        playerObject = engine.CreateGameObject("dummy");
+        componentController->RotSpeed = 0;
     }
 
     void MyGame::InstantiateAsteroid(int time) {
         std::cout << "created asteroid" << std::endl;
         std::shared_ptr<MyEngine::GameObject> gameObject = engine.CreateGameObject("Asteroid", asteroidsParent);
-        //auto& myList = gameObjects["Asteroids"];
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
                 new ExampleGame::ComponentController());
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
@@ -71,8 +65,8 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get("meteorBrown_big1.png");
         glm::vec2 scale = glm::vec2(1, 1);
         componentRenderer->sprite.setScale(scale);
-        //myList.push_back(gameObject);
-        //gameObject->DeleteAfterSeconds(5);
+        componentController->RotSpeed = 100;
+        //gameObject->DeleteAfterSeconds(1);
     }
 
     bool MyGame::onKey(SDL_Event &event) {
@@ -109,7 +103,7 @@ namespace ExampleGame {
 
     void MyGame::ProcessEvents(SDL_Event &event) {
         if(event.type == SDL_KEYDOWN) {
-            std::cout << "Process events" << std::endl;
+            //std::cout << "Process events" << std::endl;
             onKey(event);
         }
     }
