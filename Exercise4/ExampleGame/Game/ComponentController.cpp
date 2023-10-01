@@ -23,17 +23,17 @@ namespace ExampleGame {
 		MyEngine::GameObject* parent = GetGameObject();
 
 		float smoothRotSpeed = 0.016666667f;
-		//parent->rotation += smoothRotSpeed * RotSpeed * deltaTime;
-		//if(ShouldRotate)
-		parent->rotation += RotSpeed * deltaTime;
+
+		parent->rotation += (RotSpeed * deltaTime);
 		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x);
 		// Convert rotation to direction vector
-		if(isPlayer) MovDirection = glm::vec2(cos(smoothRotSpeed * parent->rotation), sin(smoothRotSpeed * parent->rotation));
+		if(isPlayer) {
+			// we have done the -sin here to offset by 90 degrees left
+			MovDirection = glm::vec2(-sin(smoothRotSpeed * (parent->rotation)), cos(smoothRotSpeed * (parent->rotation)));
+		}
 		parent->position += MovDirection * MovAmount * MovSpeed * deltaTime;
 
 		// reset position
-
-
 
 		if (parent->position.x > engine->GetScreenSize().x) {
 			parent->position.x = 0;
