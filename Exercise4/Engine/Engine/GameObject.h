@@ -16,6 +16,7 @@ namespace MyEngine {
 
 		// public API
 	public:
+        ~GameObject();
 		glm::vec2 position;
 		float rotation;
 		float Size = 1;
@@ -27,6 +28,8 @@ namespace MyEngine {
 		void KeyEvent(SDL_Event&);
 
 		void AddChild(std::shared_ptr<GameObject>);
+        void RemoveChild(std::shared_ptr<GameObject> p_object);
+        void RemoveChildren();
 		void AddComponent(std::shared_ptr<Component>);
 
 		std::string GetName();

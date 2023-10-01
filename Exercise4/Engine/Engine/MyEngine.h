@@ -38,9 +38,10 @@ namespace MyEngine {
 			float GetTime() const { return time; }
 
 			std::shared_ptr<GameObject> CreateGameObject(std::string name);
+			std::shared_ptr<GameObject> CreateGameObject(std::string name, std::shared_ptr<GameObject> parent);
 
-		private:
 			std::shared_ptr<GameObject> _root;
+		private:
 
 			std::chrono::time_point<std::chrono::steady_clock>	time_start;
 			std::chrono::time_point<std::chrono::steady_clock>	time_end;

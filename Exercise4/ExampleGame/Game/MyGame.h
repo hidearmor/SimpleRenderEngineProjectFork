@@ -37,13 +37,15 @@ class MyGame {
         sre::Camera camera;
         std::shared_ptr <sre::SpriteAtlas> atlas;
 
-        std::map<std::string, std::list<std::shared_ptr<MyEngine::GameObject>>> gameObjects;
-
+//        std::map<std::string, std::list<std::shared_ptr<MyEngine::GameObject>>> gameObjects;
         //void DestroyObject(std::string category, std::shared_ptr<MyEngine::GameObject> obj);
         //void DestroyObject(std::shared_ptr<MyEngine::GameObject> obj);
 
         //void DeleteObjectsBasedOnConditions();
     private:
+        std::shared_ptr<MyEngine::GameObject> asteroidsParent;
+        std::shared_ptr<MyEngine::GameObject> lazerParent;
+        void RemoveAsteroids();
         static MyGame* _instance;
     };
 }

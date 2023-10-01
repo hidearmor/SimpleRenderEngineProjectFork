@@ -67,4 +67,14 @@ namespace MyEngine {
 
 		return ret;
 	}
+
+	std::shared_ptr<GameObject> Engine::CreateGameObject(std::string name, std::shared_ptr<GameObject> parent) {
+		auto ret = std::make_shared<GameObject>();
+		ret->_self = ret;
+		ret->_parent = parent;
+		ret->SetName(name);
+		parent->AddChild(ret);
+
+		return ret;
+	}
 }

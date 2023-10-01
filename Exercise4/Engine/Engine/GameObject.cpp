@@ -14,6 +14,10 @@
 
 namespace MyEngine {
 	// public API
+
+	GameObject::~GameObject(){
+		std::cout << "Destructor reached" << this->_name << std::endl;
+	}
 	void GameObject::Init() {
 		for (auto& component : _components)
 			component->Init();
@@ -48,6 +52,14 @@ namespace MyEngine {
 
 	void GameObject::AddChild(std::shared_ptr<GameObject> p_object) {
 		_children.push_back(p_object);
+	}
+
+	void GameObject::RemoveChild(std::shared_ptr<GameObject> p_object) {
+		_children.remove(p_object);
+	}
+
+	void GameObject::RemoveChildren() {
+		_children.clear();
 	}
 
 	void GameObject::AddComponent(std::shared_ptr<Component> p_component) {
