@@ -8,9 +8,10 @@
 
 namespace MyEngine {
 	class Component;
-	class Observer;
+	//class Observer;
 
-	class GameObject : public std::enable_shared_from_this<GameObject> {
+	//class GameObject : public std::enable_shared_from_this<GameObject> {
+    class GameObject{
 		friend class Engine;
 
 		// public API
@@ -30,14 +31,14 @@ namespace MyEngine {
 
 		std::string GetName();
 		void SetName(std::string);
-        void DestroyObject(std::shared_ptr<GameObject> obj);
+        //void DestroyObject(std::shared_ptr<GameObject> obj);
 
-        void addObserver(std::shared_ptr<Observer> observer);
-        void notifyObservers();
+        //void addObserver(std::shared_ptr<Observer> observer);
+        //void notifyObservers();
 
 		// private fields
 	private:
-        std::vector<std::weak_ptr<Observer>> observers;
+        //std::vector<std::weak_ptr<Observer>> observers;
 		std::weak_ptr<GameObject> _parent;
 		std::weak_ptr<GameObject> _self;
 		std::list<std::shared_ptr<GameObject>> _children = {};

@@ -11,6 +11,7 @@ namespace ExampleGame {
     MyGame::MyGame() {
         assert(_instance == nullptr && " Only one instance of MyEngine::Engine allowed!");
         _instance = this;
+        std::cout << "instantiated" << std::endl;
 
         gameObjects["Asteroids"].push_back({});
         gameObjects["Lazers"].push_back({});
@@ -21,6 +22,7 @@ namespace ExampleGame {
 
 
     void MyGame::InitGame() {
+        std::cout << "init" << std::endl;
         renderer.frameRender = [this] { Render(); };
         renderer.frameUpdate = [this](float deltaTime) { Update(deltaTime); };
         renderer.keyEvent = [this](SDL_Event& event) { ProcessEvents(event); };
@@ -32,6 +34,7 @@ namespace ExampleGame {
         atlas = sre::SpriteAtlas::create("data/Asteroids.json", "data/Asteroids.png");
 
         CreatePlayer();
+
 
         engine.Init();
         renderer.startEventLoop();
@@ -50,12 +53,15 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get("playerShip3_orange.png");
         glm::vec2 scale = glm::vec2(0.6, 0.6);
         componentRenderer->sprite.setScale(scale);
+
+        //playerObject = std::make_shared<MyEngine::GameObject>(new MyEngine::GameObject());;
+        playerObject = engine.CreateGameObject("dummy");
     }
 
     void MyGame::InstantiateAsteroid(int time) {
+        std::cout << "created asteroid" << std::endl;
         std::shared_ptr<MyEngine::GameObject> gameObject = engine.CreateGameObject("Asteroid");
         auto& myList = gameObjects["Asteroids"];
-        myList.push_back(gameObject);
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
                 new ExampleGame::ComponentController());
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
@@ -65,44 +71,54 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get("meteorBrown_big1.png");
         glm::vec2 scale = glm::vec2(1, 1);
         componentRenderer->sprite.setScale(scale);
+        myList.push_back(gameObject);
+        //gameObject->DeleteAfterSeconds(5);
     }
 
     bool MyGame::onKey(SDL_Event &event) {
         switch (event.key.keysym.sym) {
             case SDLK_SPACE: {
+                if(event.type == SDL_KEYDOWN)
                 InstantiateAsteroid(1);
             }
                 break;
             case SDLK_LEFT: {
                 //left = event.type == SDL_KEYDOWN;
-                InstantiateAsteroid(1);
             }
                 break;
             case SDLK_RIGHT: {
                 //right = event.type == SDL_KEYDOWN;
             }
                 break;
+            case SDLK_x : {
+                if(event.type == SDL_KEYDOWN){
+
+                }
+                //DeleteObjectsBasedOnConditions();
+            }
+                break;
+            default: break;
         }
 
         return false;
     }
 
     void MyGame::ProcessEvents(SDL_Event &event) {
-        onKey(event);
-        if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_x){
-            DeleteObjectsBasedOnConditions();
+        if(event.type == SDL_KEYDOWN) {
+            std::cout << "Process events" << std::endl;
+            onKey(event);
         }
     }
 
     void MyGame::Update(float deltaTime) {
         engine.Update(deltaTime);
-        DeleteObjectsBasedOnConditions();
+        //DeleteObjectsBasedOnConditions();
     }
 
     void MyGame::Render() {
         engine.Render();
     }
-
+/*
     void MyGame::DestroyObject(std::string category, std::shared_ptr<MyEngine::GameObject> obj) {
         if(category == "Asteroids")
         {
@@ -125,14 +141,23 @@ namespace ExampleGame {
     }
 
     void MyGame::DeleteObjectsBasedOnConditions() {
+        std::cout << "reached delete method" << std::endl;
         // Example: Delete objects after 5 seconds
-        for (auto it = gameObjects.begin(); it != gameObjects.end(); ) {
-            auto gameObject = *it;
-            bool mb = false;
-            if (mb) {
-                it = gameObjects.erase(it);
-            } else {
-                ++it;
+        for (auto& pair : gameObjects) {
+            auto& myList = pair.second;
+            std::cout << "list " << pair.first << " ";
+            std::cout << myList.size() << std::endl;
+            for (auto it = myList.begin(); it != myList.end(); ) {
+                auto myGO = *it;
+                //DestroyObject(myGO);
+                bool mb = true;
+                if (mb) {
+                    it = myList.erase(it);
+                    std::cout << "deleted item" << std::endl;
+
+                } else {
+                    ++it;
+                }
             }
         }
     }
@@ -140,6 +165,5 @@ namespace ExampleGame {
     void MyGame::onGameObjectDestroyed(std::shared_ptr<MyEngine::GameObject> gameObject) {
         MyGame::DestroyObject("Asteroids", gameObject);
     }
-
-
+*/
 }

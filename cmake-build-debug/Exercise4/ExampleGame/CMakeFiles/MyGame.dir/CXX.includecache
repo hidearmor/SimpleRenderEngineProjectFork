@@ -1144,19 +1144,9 @@ SDL2/begin_code.h
 SDL2/close_code.h
 -
 
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.cpp
-ComponentController.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.h
-Engine/MyEngine.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/Engine/MyEngine.h
-
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.h
 Engine/Component.h
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/Engine/Component.h
-
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentRendererSprite.cpp
-ComponentRendererSprite.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentRendererSprite.h
 
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentRendererSprite.h
 sre/SpriteAtlas.hpp

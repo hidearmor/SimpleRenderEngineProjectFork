@@ -8,12 +8,13 @@
 #include <string>
 
 namespace ExampleGame{
-class MyGame : public MyEngine::Observer {
+//class MyGame : public MyEngine::Observer {
+class MyGame {
     public:
         //MyGame instance;
         MyGame();
 
-        void onGameObjectDestroyed(std::shared_ptr<MyEngine::GameObject> gameObject) override;
+        //void onGameObjectDestroyed(std::shared_ptr<MyEngine::GameObject> gameObject) override;
 
         void InitGame();
 
@@ -38,10 +39,10 @@ class MyGame : public MyEngine::Observer {
 
         std::map<std::string, std::list<std::shared_ptr<MyEngine::GameObject>>> gameObjects;
 
-        void DestroyObject(std::string category, std::shared_ptr<MyEngine::GameObject> obj);
-        void DestroyObject(std::shared_ptr<MyEngine::GameObject> obj);
+        //void DestroyObject(std::string category, std::shared_ptr<MyEngine::GameObject> obj);
+        //void DestroyObject(std::shared_ptr<MyEngine::GameObject> obj);
 
-        void DeleteObjectsBasedOnConditions();
+        //void DeleteObjectsBasedOnConditions();
     private:
         static MyGame* _instance;
     };

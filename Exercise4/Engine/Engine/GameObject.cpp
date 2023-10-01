@@ -55,18 +55,6 @@ namespace MyEngine {
 		_components.push_back(p_component);
 	}
 
-	void GameObject::addObserver(std::shared_ptr<Observer> observer) {
-		observers.push_back(observer);
-	}
-
-	void GameObject::notifyObservers() {
-		for (auto& observer : observers) {
-			if (auto sharedObserver = observer.lock()) {
-				//sharedObserver->onGameObjectDestroyed(shared_from_this());
-			}
-		}
-	}
-
 	std::string GameObject::GetName() {
 		return _name;
 	}
@@ -78,9 +66,22 @@ namespace MyEngine {
 	void GameObject::setSize(float newSize){
 		Size = newSize;
 	}
-
+/*
 	void GameObject::DeleteAfterSeconds(int seconds) {
 		std::this_thread::sleep_for(std::chrono::seconds(seconds));
 		GameObject::notifyObservers();
 	}
+
+    void GameObject::addObserver(std::shared_ptr<Observer> observer) {
+        observers.push_back(observer);
+    }
+
+    void GameObject::notifyObservers() {
+        for (auto& observer : observers) {
+            if (auto sharedObserver = observer.lock()) {
+                sharedObserver->onGameObjectDestroyed(shared_from_this());
+            }
+        }
+    }
+*/
 }
