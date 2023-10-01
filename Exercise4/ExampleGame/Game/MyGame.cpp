@@ -52,6 +52,7 @@ namespace ExampleGame {
         componentRenderer->sprite.setScale(scale);
         componentController->SetRotationSpeed(0);
         componentController->SetMovementSpeed(0);
+        componentController->isPlayer = true;
         return playerObject;
     }
 

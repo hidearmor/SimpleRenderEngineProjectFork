@@ -28,7 +28,7 @@ namespace ExampleGame {
 		parent->rotation += RotSpeed * deltaTime;
 		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x);
 		// Convert rotation to direction vector
-		MovDirection = glm::vec2(cos(smoothRotSpeed * parent->rotation), sin(smoothRotSpeed * parent->rotation));
+		if(isPlayer) MovDirection = glm::vec2(cos(smoothRotSpeed * parent->rotation), sin(smoothRotSpeed * parent->rotation));
 		parent->position += MovDirection * MovAmount * MovSpeed * deltaTime;
 
 		// reset position
@@ -77,8 +77,9 @@ namespace ExampleGame {
 		MovSpeed = speed;
 	}
 
+
 	void ComponentController::KeyEvent(SDL_Event &event) {
-		std::cout << "KeyEvent controller" << std::endl;
+		if(!isPlayer) return;
 
 		switch (event.key.keysym.sym) {
 
@@ -105,5 +106,7 @@ namespace ExampleGame {
 		}
 
 	}
+
+
 
 }
