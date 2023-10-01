@@ -7,16 +7,19 @@ namespace ExampleGame {
 		float MovSpeed;
 		float MovAmount;
 		glm::vec2 MovDirection;
+		float RotSpeed;
+		glm::vec2 basePos;
 
 	public:
-		float RotSpeed;
-		ComponentController();
-		glm::vec2 position;
-		float rotaiton;
+		void SetRotationSpeed(float speed);
+		void SetMovementDirection(glm::vec2 direction);
+		ComponentController(bool rotate);
+		//glm::vec2 position;
+		//float rotaiton;
+		bool ShouldRotate;
 
 		void Init() override;
 		void Update(float) override;
 		void setSize(float size);
-		void TakeInput();
 	};
 }

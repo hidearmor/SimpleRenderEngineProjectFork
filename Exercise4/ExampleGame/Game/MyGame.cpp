@@ -41,7 +41,7 @@ namespace ExampleGame {
         // create player
         std::shared_ptr<MyEngine::GameObject> playerObject = engine.CreateGameObject("Player");
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
-                new ExampleGame::ComponentController()
+                new ExampleGame::ComponentController(false)
         );
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
         playerObject->AddComponent(componentController);
@@ -50,23 +50,20 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get("playerShip3_orange.png");
         glm::vec2 scale = glm::vec2(0.6, 0.6);
         componentRenderer->sprite.setScale(scale);
-        componentController->RotSpeed = 0;
+        componentController->SetRotationSpeed(0);
     }
 
     void MyGame::InstantiateAsteroid(int time) {
         std::cout << "created asteroid" << std::endl;
         std::shared_ptr<MyEngine::GameObject> gameObject = engine.CreateGameObject("Asteroid", asteroidsParent);
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
-                new ExampleGame::ComponentController());
+                new ExampleGame::ComponentController(true));
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
         gameObject->AddComponent(componentController);
         gameObject->AddComponent(componentRenderer);
-
         componentRenderer->sprite = atlas->get("meteorBrown_big1.png");
-        glm::vec2 scale = glm::vec2(1, 1);
-        componentRenderer->sprite.setScale(scale);
-        componentController->RotSpeed = 100;
-        //gameObject->DeleteAfterSeconds(1);
+        componentController->SetRotationSpeed(100);
+        componentController->Init();
     }
 
     bool MyGame::onKey(SDL_Event &event) {

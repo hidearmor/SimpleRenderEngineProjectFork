@@ -3,16 +3,17 @@
 #include "Engine/MyEngine.h"
 
 namespace ExampleGame {
-	ComponentController::ComponentController(){
+	ComponentController::ComponentController(bool rotate){
+		ShouldRotate = rotate;
 		RotSpeed = 10;
-		MovSpeed = 100;
-		MovAmount = 2;
+		MovSpeed = 200;
+		MovAmount = 1;
 		MovDirection = glm::vec2(0, 1);
 	}
 	void ComponentController::Init() {
 		MyEngine::GameObject* parent = GetGameObject();
 		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
-		glm::vec2 basePos = engine->GetScreenSize() / 2.f;
+		basePos = engine->GetScreenSize() / 2.f;
 		parent->position = basePos;
 	}
 
@@ -20,10 +21,10 @@ namespace ExampleGame {
 		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
 		MyEngine::GameObject* parent = GetGameObject();
 
-		parent->rotation += RotSpeed * deltaTime;
+		if(ShouldRotate) parent->rotation += RotSpeed * deltaTime;
 		parent->position += MovDirection * MovAmount * MovSpeed * deltaTime;
 
-		// Optional: You can reset the position when it goes off-screen
+		// reset position
 
 		if (parent->position.x > engine->GetScreenSize().x) {
 			parent->position.x = 0;
@@ -40,7 +41,12 @@ namespace ExampleGame {
 
 	}
 
-	void TakeInput(){
+	void ComponentController::SetRotationSpeed(float speed){
+		RotSpeed = speed;
+	}
+
+	void ComponentController::SetMovementDirection(glm::vec2 direction)
+	{
 
 	}
 
