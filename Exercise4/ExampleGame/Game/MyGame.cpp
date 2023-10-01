@@ -64,6 +64,7 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get("meteorBrown_big1.png");
         componentController->SetRotationSpeed(100);
         componentController->Init();
+        componentController->RandomPosition();
     }
 
     bool MyGame::onKey(SDL_Event &event) {

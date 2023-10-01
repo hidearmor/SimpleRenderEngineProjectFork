@@ -17,6 +17,7 @@ namespace ExampleGame {
 		//glm::vec2 position;
 		//float rotaiton;
 		bool ShouldRotate;
+		void RandomPosition();
 
 		void Init() override;
 		void Update(float) override;

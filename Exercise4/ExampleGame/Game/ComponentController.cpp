@@ -1,6 +1,7 @@
 #include "ComponentController.h"
 
 #include "Engine/MyEngine.h"
+#include <random>
 
 namespace ExampleGame {
 	ComponentController::ComponentController(bool rotate){
@@ -39,6 +40,20 @@ namespace ExampleGame {
 			parent->position.y = engine->GetScreenSize().y;
 		}
 
+	}
+
+	void ComponentController::RandomPosition(){
+		std::random_device rd;
+		std::mt19937 gen(rd());
+		MyEngine::GameObject* parent = GetGameObject();
+		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
+		auto bounds = engine->GetScreenSize();
+		std::uniform_real_distribution<float> distx(0,bounds.x);
+		std::uniform_real_distribution<float> disty(0,bounds.y);
+		float x = distx(gen);
+		float y = disty(gen);
+		auto pos = glm::vec2(x,y);
+		parent->position = pos;
 	}
 
 	void ComponentController::SetRotationSpeed(float speed){
