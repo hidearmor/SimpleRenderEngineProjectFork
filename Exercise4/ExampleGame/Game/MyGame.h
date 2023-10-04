@@ -28,7 +28,8 @@ class MyGame {
 
         bool onKey(SDL_Event &event);
 
-        void InstantiateAsteroid(int time);
+        void InstantiateAsteroid();
+        void InstantiateLazer();
 
         MyEngine::Engine engine;
 
@@ -46,6 +47,7 @@ class MyGame {
         std::shared_ptr<MyEngine::GameObject> asteroidsParent;
         std::shared_ptr<MyEngine::GameObject> lazerParent;
         std::shared_ptr<MyEngine::GameObject> player;
+        std::shared_ptr<MyEngine::GameObject> instantiateGO(std::string name, std::shared_ptr<MyEngine::GameObject> parent, std::string _sprite, int rotSpeed);
         void RemoveAsteroids();
         static MyGame* _instance;
 

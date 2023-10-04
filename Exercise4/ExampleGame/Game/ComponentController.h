@@ -20,7 +20,6 @@ namespace ExampleGame {
 		//float rotaiton;
 		bool ShouldRotate;
 		bool isPlayer = false;
-		void RandomPosition();
 
 		void Init() override;
 		void Update(float) override;

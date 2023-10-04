@@ -30,10 +30,13 @@ namespace ExampleGame {
 
         player = CreatePlayer();
 
+
         asteroidsParent = engine.CreateGameObject("asteroidsParent");
         lazerParent = engine.CreateGameObject("lazersParent");
 
         engine.Init();
+
+        for (int i = 1; i <= 5; ++i) InstantiateAsteroid();
         renderer.startEventLoop();
     }
 
@@ -56,24 +59,37 @@ namespace ExampleGame {
         return playerObject;
     }
 
-    void MyGame::InstantiateAsteroid(int time) {
-        std::cout << "created asteroid" << std::endl;
-        std::shared_ptr<MyEngine::GameObject> gameObject = engine.CreateGameObject("Asteroid", asteroidsParent);
+    void MyGame::InstantiateAsteroid() {
+        std::shared_ptr<MyEngine::GameObject> gameObject =
+                instantiateGO("Asteroid", asteroidsParent, "meteorBrown_big1.png", -100);
+        gameObject->RandomizePosition();
+    }
+
+    void MyGame::InstantiateLazer() {
+        std::shared_ptr<MyEngine::GameObject> gameObject =
+                instantiateGO("Lazer", asteroidsParent, "laserBlue05.png", 0);
+    }
+
+    std::shared_ptr<MyEngine::GameObject> MyGame::instantiateGO(
+            std::string name, std::shared_ptr<MyEngine::GameObject> parent, std::string _sprite, int rotSpeed){
+        std::cout << "created " << name << std::endl;
+        std::shared_ptr<MyEngine::GameObject> gameObject = engine.CreateGameObject(name, parent);
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
                 new ExampleGame::ComponentController(true));
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
         gameObject->AddComponent(componentController);
         gameObject->AddComponent(componentRenderer);
-        componentRenderer->sprite = atlas->get("meteorBrown_big1.png");
-        componentController->SetRotationSpeed(-100);
+        componentRenderer->sprite = atlas->get(_sprite);
+        componentController->SetRotationSpeed(rotSpeed);
         componentController->Init();
-        componentController->RandomPosition();
+        //componentController->RandomPosition();
+        return gameObject;
     }
 
     bool MyGame::onKey(SDL_Event &event) {
             switch (event.key.keysym.sym) {
                 case SDLK_SPACE: {
-                    InstantiateAsteroid(1);
+                    InstantiateLazer();
                 }
                     break;
                 case SDLK_LEFT: {

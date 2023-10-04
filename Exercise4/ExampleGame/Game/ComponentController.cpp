@@ -22,13 +22,13 @@ namespace ExampleGame {
 		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
 		MyEngine::GameObject* parent = GetGameObject();
 
-		float smoothRotSpeed = 0.016666667f;
+		float smoothRotSpeed = 0.016666667f; //100/60 = 1,666666666
 
 		parent->rotation += (RotSpeed * deltaTime);
 		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x);
 		// Convert rotation to direction vector
 		if(isPlayer) {
-			// we have done the -sin here to offset by 90 degrees left
+			// we have done the -sin here to offset by 90 degrees left because the sprite was weird
 			MovDirection = glm::vec2(-sin(smoothRotSpeed * (parent->rotation)), cos(smoothRotSpeed * (parent->rotation)));
 		}
 		parent->position += MovDirection * MovAmount * MovSpeed * deltaTime;
@@ -48,20 +48,6 @@ namespace ExampleGame {
 			parent->position.y = engine->GetScreenSize().y;
 		}
 
-	}
-
-	void ComponentController::RandomPosition(){
-		std::random_device rd;
-		std::mt19937 gen(rd());
-		MyEngine::GameObject* parent = GetGameObject();
-		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
-		auto bounds = engine->GetScreenSize();
-		std::uniform_real_distribution<float> distx(0,bounds.x);
-		std::uniform_real_distribution<float> disty(0,bounds.y);
-		float x = distx(gen);
-		float y = disty(gen);
-		auto pos = glm::vec2(x,y);
-		parent->position = pos;
 	}
 
 	void ComponentController::SetRotationSpeed(float speed){

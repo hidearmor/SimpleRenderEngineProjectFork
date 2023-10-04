@@ -12,6 +12,7 @@
 #include <future>
 #include <thread>
 #include <chrono>
+#include <random>
 
 namespace MyEngine {
 	// public API
@@ -83,6 +84,19 @@ namespace MyEngine {
 	std::shared_ptr<Component> GameObject::GetFirstComponent(){
 		std::shared_ptr<Component> comp = _components.front();
 	}
+
+    void GameObject::RandomizePosition(){
+        static std::random_device rd;
+        std::mt19937 gen(rd());
+        MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
+        auto bounds = engine->GetScreenSize();
+        std::uniform_real_distribution<float> distx(0,bounds.x);
+        std::uniform_real_distribution<float> disty(0,bounds.y);
+        float x = distx(gen);
+        float y = disty(gen);
+        auto pos = glm::vec2(x,y);
+        position = pos;
+    }
 
 /*
     void GameObject::addObserver(std::shared_ptr<Observer> observer) {

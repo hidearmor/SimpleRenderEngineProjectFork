@@ -31,6 +31,7 @@ namespace MyEngine {
         void RemoveChildren();
 		void AddComponent(std::shared_ptr<Component>);
         std::shared_ptr<Component> GetFirstComponent();
+		void RandomizePosition();
 
 		std::string GetName();
 		void SetName(std::string);
