@@ -77,6 +77,7 @@ namespace ExampleGame {
             auto dir = playerController.lock()->getMovDirection();
             cc.get()->SetMovementDirection(dir);
             lazerObject.get()->position = player.get()->position;
+            lazerObject.get()->rotation = player.get()->rotation;
         }
         cc.get()->SetMovementSpeed(400);
     }
