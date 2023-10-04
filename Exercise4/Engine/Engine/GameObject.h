@@ -32,6 +32,7 @@ namespace MyEngine {
 		void AddComponent(std::shared_ptr<Component>);
         std::shared_ptr<Component> GetFirstComponent();
 		void RandomizePosition();
+        std::list<std::weak_ptr<Component>> getComponents();
 
 		std::string GetName();
 		void SetName(std::string);

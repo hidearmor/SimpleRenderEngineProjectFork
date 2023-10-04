@@ -1144,14 +1144,6 @@ SDL2/begin_code.h
 SDL2/close_code.h
 -
 
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.cpp
-ComponentController.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.h
-Engine/MyEngine.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/Engine/MyEngine.h
-random
--
-
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.h
 Engine/Component.h
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/Engine/Component.h
@@ -1185,4 +1177,6 @@ Engine/Observer.h
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/Engine/Observer.h
 string
 -
+ComponentController.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.h
 

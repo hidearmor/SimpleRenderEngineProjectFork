@@ -56,11 +56,15 @@ namespace ExampleGame {
 
 	void ComponentController::SetMovementDirection(glm::vec2 direction)
 	{
-		//parent->rotation += std::atan2(direction.y, direction.x);
+		MovDirection = direction;
 	}
 
 	void ComponentController::SetMovementSpeed(float speed) {
 		MovSpeed = speed;
+	}
+
+	glm::vec2 ComponentController::getMovDirection() {
+		return MovDirection;
 	}
 
 

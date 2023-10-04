@@ -14,6 +14,7 @@ namespace ExampleGame {
 		void SetRotationSpeed(float speed);
 		void SetMovementSpeed(float speed);
 		void SetMovementDirection(glm::vec2 direction);
+		glm::vec2 getMovDirection();
 		ComponentController(bool rotate);
         void KeyEvent(SDL_Event &event) override;
 		//glm::vec2 position;

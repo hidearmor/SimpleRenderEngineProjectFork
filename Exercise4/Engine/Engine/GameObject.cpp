@@ -98,6 +98,15 @@ namespace MyEngine {
         position = pos;
     }
 
+	std::list<std::weak_ptr<Component>> GameObject::getComponents() {
+		std::list<std::weak_ptr<Component>> ret = {};
+		for (auto& component : _components) {
+			std::weak_ptr<Component> ptr = component;
+			ret.push_back(ptr);
+		}
+		return ret;
+	}
+
 /*
     void GameObject::addObserver(std::shared_ptr<Observer> observer) {
         observers.push_back(observer);

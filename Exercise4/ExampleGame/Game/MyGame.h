@@ -6,6 +6,7 @@
 #include "Engine/MyEngine.h"
 #include "Engine/Observer.h"
 #include <string>
+#include "ComponentController.h"
 
 namespace ExampleGame{
 //class MyGame : public MyEngine::Observer {
@@ -30,6 +31,8 @@ class MyGame {
 
         void InstantiateAsteroid();
         void InstantiateLazer();
+
+        std::weak_ptr<ExampleGame::ComponentController> GetCC(std::shared_ptr<MyEngine::GameObject> gameObject);
 
         MyEngine::Engine engine;
 

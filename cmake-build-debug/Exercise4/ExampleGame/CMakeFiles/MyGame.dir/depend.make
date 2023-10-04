@@ -362,6 +362,7 @@ Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/Exam
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/ExampleGame/Game/MyGame.cpp
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/ExampleGame/Game/MyGame.h
 
+Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/Component.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/GameObject.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/MyEngine.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/Observer.h
@@ -481,6 +482,7 @@ Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../submodules/SimpleRend
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../submodules/SimpleRenderEngine/submodules/imgui/imgui.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/ExampleGame/Game/ComponentController.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/ExampleGame/Game/MyGame.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/ExampleGame/main.cpp
 
