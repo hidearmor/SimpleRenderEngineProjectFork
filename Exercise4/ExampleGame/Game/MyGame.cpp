@@ -60,9 +60,11 @@ namespace ExampleGame {
     }
 
     void MyGame::InstantiateAsteroid() {
-        std::shared_ptr<MyEngine::GameObject> gameObject =
+        std::shared_ptr<MyEngine::GameObject> asteroidObject =
                 instantiateGO("Asteroid", asteroidsParent, "meteorBrown_big1.png", -100);
-        gameObject->RandomizePosition();
+        asteroidObject->RandomizePosition();
+        std::weak_ptr<ExampleGame::ComponentController> playerController = GetCC(asteroidObject);
+        playerController.lock().get()->RandomizeDirection();
     }
 
     void MyGame::InstantiateLazer() {
@@ -110,7 +112,6 @@ namespace ExampleGame {
         componentRenderer->sprite = atlas->get(_sprite);
         componentController->SetRotationSpeed(rotSpeed);
         componentController->Init();
-        //componentController->RandomPosition();
         return gameObject;
     }
 

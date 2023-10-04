@@ -1,5 +1,5 @@
 #include "ComponentController.h"
-
+#include <glm/glm.hpp>
 #include "Engine/MyEngine.h"
 #include <random>
 
@@ -49,6 +49,17 @@ namespace ExampleGame {
 		}
 
 	}
+
+    void ComponentController::RandomizeDirection() {
+        static std::random_device rd;
+        std::mt19937 gen(rd());
+
+        // Assuming you want a random direction within a unit circle
+        std::uniform_real_distribution<float> distTheta(0.0f, 2.0f * static_cast<float>(M_PI));
+        float theta = distTheta(gen);
+
+        MovDirection = glm::vec2(std::cos(theta), std::sin(theta));
+    }
 
 	void ComponentController::SetRotationSpeed(float speed){
 		RotSpeed = speed;
