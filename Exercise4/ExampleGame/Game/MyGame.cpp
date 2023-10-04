@@ -66,16 +66,19 @@ namespace ExampleGame {
     }
 
     void MyGame::InstantiateLazer() {
-        std::shared_ptr<MyEngine::GameObject> gameObject =
+        std::shared_ptr<MyEngine::GameObject> lazerObject =
                 instantiateGO("Lazer", asteroidsParent, "laserBlue05.png", 0);
 
         std::weak_ptr<ExampleGame::ComponentController> playerController = GetCC(player);
+        auto cc = GetCC(lazerObject).lock();
         if (playerController.expired()) {
             std::cout << "ComponentController not found!" << std::endl;
         } else {
             auto dir = playerController.lock()->getMovDirection();
-            GetCC(gameObject).lock().get()->SetMovementDirection(dir);
+            cc.get()->SetMovementDirection(dir);
+            lazerObject.get()->position = player.get()->position;
         }
+        cc.get()->SetMovementSpeed(400);
     }
 
     std::weak_ptr<ExampleGame::ComponentController> MyGame::GetCC(std::shared_ptr<MyEngine::GameObject> gameObject) {
