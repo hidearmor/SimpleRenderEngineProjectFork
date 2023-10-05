@@ -1,3 +1,4 @@
+#include <Engine/ColliderCircleComponent.h>
 #include "MyGame.h"
 #include "Engine/MyEngine.h"
 
@@ -141,8 +142,10 @@ namespace ExampleGame {
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
                 new ExampleGame::ComponentController(true));
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
+        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(10);
         gameObject->AddComponent(componentController);
         gameObject->AddComponent(componentRenderer);
+        gameObject->AddComponent(Collider);
         componentRenderer->sprite = atlas->get(_sprite);
         componentController->SetRotationSpeed(rotSpeed);
         componentController->Init();
