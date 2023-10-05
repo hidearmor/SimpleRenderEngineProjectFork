@@ -19,6 +19,7 @@ namespace MyEngine {
 		virtual void Update(float) {};
 		virtual void Render(sre::SpriteBatch::SpriteBatchBuilder&) {};
 		virtual void KeyEvent(SDL_Event&) {};
+		void SetGameObject(std::weak_ptr<GameObject>);
 
 		// interface used by gameplay components
 	protected:
@@ -27,6 +28,5 @@ namespace MyEngine {
 	private:
 		std::weak_ptr<GameObject> _gameObject;
 
-		void SetGameObject(std::weak_ptr<GameObject>);
 	};
 }

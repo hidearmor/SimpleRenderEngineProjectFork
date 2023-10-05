@@ -33,6 +33,8 @@ namespace ExampleGame {
 
         asteroidsParent = engine.CreateGameObject("asteroidsParent");
         lazerParent = engine.CreateGameObject("lazersParent");
+        lazerParent->shouldRemoveChildrenAfterSeconds = true;
+        lazerParent->secondsChildrenWillLive = 1;
 
         engine.Init();
 
@@ -69,7 +71,7 @@ namespace ExampleGame {
 
     void MyGame::InstantiateLazer() {
         std::shared_ptr<MyEngine::GameObject> lazerObject =
-                instantiateGO("Lazer", asteroidsParent, "laserBlue05.png", 0);
+                instantiateGO("Lazer", lazerParent, "laserBlue05.png", 0);
 
         std::weak_ptr<ExampleGame::ComponentController> playerController = GetCC(player);
         auto cc = GetCC(lazerObject).lock();
@@ -82,6 +84,7 @@ namespace ExampleGame {
             lazerObject.get()->rotation = player.get()->rotation;
         }
         cc.get()->SetMovementSpeed(400);
+        //lazerObject.get()->DestroyInSeconds(1.0); //is not working
     }
 
     std::weak_ptr<ExampleGame::ComponentController> MyGame::GetCC(std::shared_ptr<MyEngine::GameObject> gameObject) {
@@ -102,7 +105,7 @@ namespace ExampleGame {
 
     std::shared_ptr<MyEngine::GameObject> MyGame::instantiateGO(
             std::string name, std::shared_ptr<MyEngine::GameObject> parent, std::string _sprite, int rotSpeed){
-        std::cout << "created " << name << std::endl;
+        //std::cout << "created " << name << std::endl;
         std::shared_ptr<MyEngine::GameObject> gameObject = engine.CreateGameObject(name, parent);
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
                 new ExampleGame::ComponentController(true));
@@ -150,12 +153,11 @@ namespace ExampleGame {
             //std::cout << "Process events" << std::endl;
             onKey(event);
         }
-        engine.ProcessEvents(event);
+        engine.ProcessEvents(event); //make sure that the game object side of things also get's processed
     }
 
     void MyGame::Update(float deltaTime) {
         engine.Update(deltaTime);
-        //DeleteObjectsBasedOnConditions();
     }
 
     void MyGame::Render() {
@@ -165,7 +167,9 @@ namespace ExampleGame {
     void MyGame::RemoveAsteroids(){
         asteroidsParent->RemoveChildren();
     }
-/*
+
+    //tried my hand at an observer pattern implementation for destruction after xx seconds. Couldn't make it work
+    /*
     void MyGame::DestroyObject(std::string category, std::shared_ptr<MyEngine::GameObject> obj) {
         if(category == "Asteroids")
         {
@@ -213,4 +217,5 @@ namespace ExampleGame {
         MyGame::DestroyObject("Asteroids", gameObject);
     }
 */
+
 }

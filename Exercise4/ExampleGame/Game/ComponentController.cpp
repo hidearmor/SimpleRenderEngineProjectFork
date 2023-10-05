@@ -25,7 +25,7 @@ namespace ExampleGame {
 		float smoothRotSpeed = 0.016666667f; //100/60 = 1,666666666
 
 		parent->rotation += (RotSpeed * deltaTime);
-		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x);
+		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x); //atempt to use rotation to control mov direction
 		// Convert rotation to direction vector
 		if(isPlayer) {
 			// we have done the -sin here to offset by 90 degrees left because the sprite was weird

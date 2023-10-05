@@ -39,6 +39,7 @@ namespace MyEngine {
 
 			std::shared_ptr<GameObject> CreateGameObject(std::string name);
 			std::shared_ptr<GameObject> CreateGameObject(std::string name, std::shared_ptr<GameObject> parent);
+			void DestoryObject(std::shared_ptr<GameObject> object);
 
 			std::shared_ptr<GameObject> _root;
 		private:

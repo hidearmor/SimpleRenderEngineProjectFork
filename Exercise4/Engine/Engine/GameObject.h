@@ -3,6 +3,7 @@
 #include <list>
 #include <memory>
 #include <string>
+#include <chrono>
 
 #include "sre/SpriteBatch.hpp"
 
@@ -16,8 +17,11 @@ namespace MyEngine {
 
 		// public API
 	public:
+        GameObject();
         ~GameObject();
 		glm::vec2 position;
+		bool shouldRemoveChildrenAfterSeconds = false;
+		float secondsChildrenWillLive;
 		float rotation;
 		float Size = 1;
 		void setSize(float newSize);
@@ -36,7 +40,9 @@ namespace MyEngine {
 
 		std::string GetName();
 		void SetName(std::string);
-        //void DestroyObject(std::shared_ptr<GameObject> obj);
+        void DestroyObject();
+        void DestroyInSeconds(float seconds);
+        std::chrono::steady_clock::time_point getTimestamp();
 
         //void addObserver(std::shared_ptr<Observer> observer);
         //void notifyObservers();
@@ -49,5 +55,11 @@ namespace MyEngine {
 		std::list<std::shared_ptr<GameObject>> _children = {};
 		std::list< std::shared_ptr<Component>> _components = {};
 		std::string _name;
+
+        // Timestamp for destruction countdown
+        std::chrono::steady_clock::time_point createdTimestamp;
+
+        // Flag to indicate whether destruction countdown is active
+        bool isCountdownActive;
 	};
 }

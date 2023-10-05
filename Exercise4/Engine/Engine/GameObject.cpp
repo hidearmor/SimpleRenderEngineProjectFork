@@ -13,9 +13,16 @@
 #include <thread>
 #include <chrono>
 #include <random>
+#include <algorithm>
+//#include <tkDecls.h>
 
 namespace MyEngine {
 	// public API
+
+	GameObject::GameObject() {
+        createdTimestamp = std::chrono::steady_clock::now();
+        secondsChildrenWillLive = 0;
+	}
 
 	GameObject::~GameObject(){
 		std::cout << "Destructor reached" << this->_name << std::endl;
@@ -34,6 +41,30 @@ namespace MyEngine {
 
 		for (auto& child : _children)
 			child->Update(deltaTime);
+//		tried to implement my smart method of self-destruction -> turns out ot was not so smart lol
+//		if (isCountdownActive) {
+//			auto currentTime = std::chrono::steady_clock::now();
+//			if (currentTime >= createdTimestamp) {
+//				isCountdownActive = false;  // Reset the countdown
+//				DestroyObject();
+//			}
+//		}
+
+		if (shouldRemoveChildrenAfterSeconds)
+		{
+			auto now = std::chrono::steady_clock::now();
+			auto seconds = std::chrono::seconds(static_cast<int>(secondsChildrenWillLive));
+			// Use remove_if along with erase to remove elements based on a condition
+			// trying to remove without fucking up the list
+			_children.erase(
+					std::remove_if(_children.begin(), _children.end(), [&](const auto& child) {
+						bool res = (child->getTimestamp() + seconds) < now;
+						return res;
+					}),
+					_children.end()
+			);
+		}
+
 	}
 
 	void GameObject::Render(sre::SpriteBatch::SpriteBatchBuilder& spriteBatchBuilder) {
@@ -83,6 +114,7 @@ namespace MyEngine {
 
 	std::shared_ptr<Component> GameObject::GetFirstComponent(){
 		std::shared_ptr<Component> comp = _components.front();
+		return comp;
 	}
 
     void GameObject::RandomizePosition(){
@@ -105,6 +137,20 @@ namespace MyEngine {
 			ret.push_back(ptr);
 		}
 		return ret;
+	}
+
+	void GameObject::DestroyObject() {
+		//can't make this stuff work
+		//_parent.lock()->RemoveChild(_self.lock());
+	}
+
+	void GameObject::DestroyInSeconds(float seconds) {
+		createdTimestamp = std::chrono::steady_clock::now() + std::chrono::seconds(static_cast<int>(seconds));
+		isCountdownActive = true;
+	}
+
+	std::chrono::steady_clock::time_point GameObject::getTimestamp() {
+		return createdTimestamp;
 	}
 
 /*

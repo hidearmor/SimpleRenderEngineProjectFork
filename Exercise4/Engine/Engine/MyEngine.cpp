@@ -31,7 +31,7 @@ namespace MyEngine {
 
 	void Engine::ProcessEvents(SDL_Event& event) {
 		_root->KeyEvent(event);
-		std::cout << "Engine process events" << std::endl;
+		//std::cout << "Engine process events" << std::endl;
 	}
 
 	void Engine::Update(float deltaTime) {
