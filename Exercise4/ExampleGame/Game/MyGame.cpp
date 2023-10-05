@@ -1,4 +1,5 @@
 #include <Engine/ColliderCircleComponent.h>
+#include <cmath>
 #include "MyGame.h"
 #include "Engine/MyEngine.h"
 
@@ -33,7 +34,7 @@
  * "Trogonometry for Game Programming" link in one of the slides. I have 2 hours til deadline
  * right now, so won't be able to implement any of that, but will start looking at it, look very promising.
  *
- * I
+ *
  */
 
 namespace ExampleGame {
@@ -90,6 +91,10 @@ namespace ExampleGame {
         componentController->SetRotationSpeed(0);
         componentController->SetMovementSpeed(0);
         componentController->isPlayer = true;
+
+        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
+        playerObject->AddComponent(Collider);
+        _colliderPlayer = Collider;                    // add to MyGame's collider-list
         return playerObject;
     }
 
@@ -99,6 +104,10 @@ namespace ExampleGame {
         asteroidObject->RandomizePosition();
         std::weak_ptr<ExampleGame::ComponentController> playerController = GetCC(asteroidObject);
         playerController.lock().get()->RandomizeDirection();
+
+        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
+        asteroidObject->AddComponent(Collider);
+        _collidersAsteroids.push_back(Collider);                     // add to MyGame's collider-list
     }
 
     void MyGame::InstantiateLazer() {
@@ -116,6 +125,10 @@ namespace ExampleGame {
             lazerObject.get()->rotation = player.get()->rotation;
         }
         cc.get()->SetMovementSpeed(400);
+
+        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
+        lazerObject->AddComponent(Collider);
+        _collidersLazers.push_back(Collider);                     // add to MyGame's collider-list
         //lazerObject.get()->DestroyInSeconds(1.0); //is not working
     }
 
@@ -142,10 +155,8 @@ namespace ExampleGame {
         auto componentController = std::shared_ptr<ExampleGame::ComponentController>(
                 new ExampleGame::ComponentController(true));
         auto componentRenderer = std::make_shared<ExampleGame::ComponentRendererSprite>();
-        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(10);
         gameObject->AddComponent(componentController);
         gameObject->AddComponent(componentRenderer);
-        gameObject->AddComponent(Collider);
         componentRenderer->sprite = atlas->get(_sprite);
         componentController->SetRotationSpeed(rotSpeed);
         componentController->Init();
@@ -192,6 +203,26 @@ namespace ExampleGame {
 
     void MyGame::Update(float deltaTime) {
         engine.Update(deltaTime);
+        CheckCollisions();
+    }
+
+    void MyGame::CheckCollisions(){
+        for (auto& asteroid : _collidersAsteroids) {
+            //std::cout << "checking collission" << std::endl;
+
+            //player check
+            //get positions -> find distance
+            // check if distance < radius1 + radius2
+            auto go = asteroid.lock()->GetGameObject();
+            //float distanceToPlayer = std::sqrt(std::pow(player->position.x,go->position.x) + std::pow(player->position.y,go->position.y));
+            auto distanceToPlayer = std::sqrt(std::pow(player->position.x - go->position.x, 2) + std::pow(player->position.y - go->position.y, 2));
+            bool checkPlayerCollision = distanceToPlayer < (asteroid.lock()->GetRadius() + _colliderPlayer.lock()->GetRadius());
+
+            if(checkPlayerCollision) {
+                engine._root->RemoveChildren();
+                std::cout << "collision detected" << std::endl;
+            }
+        }
     }
 
     void MyGame::Render() {

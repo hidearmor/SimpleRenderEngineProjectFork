@@ -5,6 +5,7 @@
 
 #include "Engine/MyEngine.h"
 #include "Engine/Observer.h"
+#include "Engine/ColliderCircleComponent.h"
 #include <string>
 #include "ComponentController.h"
 
@@ -53,6 +54,10 @@ class MyGame {
         std::shared_ptr<MyEngine::GameObject> instantiateGO(std::string name, std::shared_ptr<MyEngine::GameObject> parent, std::string _sprite, int rotSpeed);
         void RemoveAsteroids();
         static MyGame* _instance;
+        std::list<std::weak_ptr<MyEngine::ColliderCircleComponent>> _collidersAsteroids = {};
+        std::list<std::weak_ptr<MyEngine::ColliderCircleComponent>> _collidersLazers = {};
+        std::weak_ptr<MyEngine::ColliderCircleComponent> _colliderPlayer;
+        void CheckCollisions();
 
     };
 }

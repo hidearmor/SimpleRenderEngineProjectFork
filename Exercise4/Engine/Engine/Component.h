@@ -20,10 +20,10 @@ namespace MyEngine {
 		virtual void Render(sre::SpriteBatch::SpriteBatchBuilder&) {};
 		virtual void KeyEvent(SDL_Event&) {};
 		void SetGameObject(std::weak_ptr<GameObject>);
+		GameObject* GetGameObject();
 
 		// interface used by gameplay components
 	protected:
-		GameObject* GetGameObject();
 
 	private:
 		std::weak_ptr<GameObject> _gameObject;

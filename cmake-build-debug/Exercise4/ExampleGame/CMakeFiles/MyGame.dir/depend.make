@@ -237,6 +237,7 @@ Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/ComponentRendererSprite.cpp.o: 
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/ComponentRendererSprite.cpp.o: ../Exercise4/ExampleGame/Game/ComponentRendererSprite.cpp
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/ComponentRendererSprite.cpp.o: ../Exercise4/ExampleGame/Game/ComponentRendererSprite.h
 
+Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/Engine/Engine/ColliderCircleComponent.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/Engine/Engine/Component.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/Engine/Engine/GameObject.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/Engine/Engine/MyEngine.h
@@ -362,6 +363,7 @@ Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/Exam
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/ExampleGame/Game/MyGame.cpp
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/Game/MyGame.cpp.o: ../Exercise4/ExampleGame/Game/MyGame.h
 
+Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/ColliderCircleComponent.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/Component.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/GameObject.h
 Exercise4/ExampleGame/CMakeFiles/MyGame.dir/main.cpp.o: ../Exercise4/Engine/Engine/MyEngine.h

@@ -17,6 +17,7 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o
  ../submodules/SimpleRenderEngine/include/sre/Shader.hpp
  ../submodules/SimpleRenderEngine/include/sre/Skybox.hpp
  ../submodules/SimpleRenderEngine/include/sre/Sprite.hpp
+ ../submodules/SimpleRenderEngine/include/sre/SpriteAtlas.hpp
  ../submodules/SimpleRenderEngine/include/sre/SpriteBatch.hpp
  ../submodules/SimpleRenderEngine/include/sre/Texture.hpp
  ../submodules/SimpleRenderEngine/include/sre/WorldLights.hpp
@@ -113,10 +114,12 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o
  ../submodules/SimpleRenderEngine/submodules/glm/glm/vector_relational.hpp
  ../submodules/SimpleRenderEngine/submodules/imgui/imconfig.h
  ../submodules/SimpleRenderEngine/submodules/imgui/imgui.h
+ /Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp
  /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.h
  /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h
  /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.h
+ /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o
  ../submodules/SimpleRenderEngine/include/sre/BlendType.hpp
  ../submodules/SimpleRenderEngine/include/sre/Camera.hpp

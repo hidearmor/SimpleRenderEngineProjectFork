@@ -16,6 +16,7 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: .
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/Shader.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/Skybox.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/Sprite.hpp
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/SpriteAtlas.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/SpriteBatch.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/Texture.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/include/sre/WorldLights.hpp
@@ -112,10 +113,12 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: .
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/submodules/glm/glm/vector_relational.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/submodules/imgui/imconfig.h
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../submodules/SimpleRenderEngine/submodules/imgui/imgui.h
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL.h
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../Exercise4/Engine/Engine/ColliderCircleComponent.cpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../Exercise4/Engine/Engine/ColliderCircleComponent.h
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../Exercise4/Engine/Engine/Component.h
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../Exercise4/Engine/Engine/GameObject.h
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../Exercise4/Engine/Engine/MyEngine.h
 
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o: ../submodules/SimpleRenderEngine/include/sre/BlendType.hpp
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o: ../submodules/SimpleRenderEngine/include/sre/Camera.hpp

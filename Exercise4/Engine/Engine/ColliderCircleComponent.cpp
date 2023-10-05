@@ -9,4 +9,8 @@ namespace MyEngine {
         _radius = radius;
     }
 
+    float ColliderCircleComponent::GetRadius() {
+        return _radius;
+    }
+
 }
