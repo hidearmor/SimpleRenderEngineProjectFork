@@ -1078,6 +1078,12 @@ Component.h
 MyEngine.h
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
 
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.cpp
+Component.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h
+Logger.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Logger.h
+
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h
 memory
 -
@@ -1085,6 +1091,32 @@ sre/RenderPass.hpp
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/sre/RenderPass.hpp
 GameObject.h
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.h
+
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.cpp
+GameObject.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.h
+sre/RenderPass.hpp
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/sre/RenderPass.hpp
+MyEngine.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
+Component.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h
+Logger.h
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Logger.h
+iostream
+-
+memory
+-
+future
+-
+thread
+-
+chrono
+-
+random
+-
+algorithm
+-
 
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.h
 list
@@ -1097,6 +1129,14 @@ chrono
 -
 sre/SpriteBatch.hpp
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/sre/SpriteBatch.hpp
+
+/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Logger.h
+string
+-
+iostream
+-
+stdarg.h
+-
 
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
 chrono

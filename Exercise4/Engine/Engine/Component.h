@@ -21,6 +21,7 @@ namespace MyEngine {
 		virtual void KeyEvent(SDL_Event&) {};
 		void SetGameObject(std::weak_ptr<GameObject>);
 		GameObject* GetGameObject();
+		std::weak_ptr<GameObject> GetGameObjectPtr();
 
 		// interface used by gameplay components
 	protected:

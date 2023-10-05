@@ -10,8 +10,8 @@
  * hey Chris & TA's
  * I have not documented the code very well. This is simply because I have
  * spent up towards 40 hours on the assignment. So I've learned a lot, but
- * have simply prioritized doing more code instead of documenting.
- * Really hope it's readable for you guys :)
+ * have simply prioritized doing more code instead of documenting too much :)
+ * Really hope it's readable for you guys.
  * Much of it should be readable from method names etc.
  *
  * I tried to do as less as possible in MyGame.cpp and spread it out into other classes
@@ -34,7 +34,9 @@
  * "Trogonometry for Game Programming" link in one of the slides. I have 2 hours til deadline
  * right now, so won't be able to implement any of that, but will start looking at it, look very promising.
  *
- *
+ * I managed to delete all object if you get hit by an asteroid, but my game crashes at line 246
+ *  of this file (asteroidsParent->RemoveChild(asteroidGO);) when I try to delete the current asteroid.
+ *  The rest of the collision stuff I did not have time for. Enjoy <3
  */
 
 namespace ExampleGame {
@@ -207,21 +209,47 @@ namespace ExampleGame {
     }
 
     void MyGame::CheckCollisions(){
-        for (auto& asteroid : _collidersAsteroids) {
+        for (auto& asteroidCollider : _collidersAsteroids) {
             //std::cout << "checking collission" << std::endl;
+
+            auto asteroid = asteroidCollider.lock();
 
             //player check
             //get positions -> find distance
             // check if distance < radius1 + radius2
-            auto go = asteroid.lock()->GetGameObject();
-            //float distanceToPlayer = std::sqrt(std::pow(player->position.x,go->position.x) + std::pow(player->position.y,go->position.y));
-            auto distanceToPlayer = std::sqrt(std::pow(player->position.x - go->position.x, 2) + std::pow(player->position.y - go->position.y, 2));
-            bool checkPlayerCollision = distanceToPlayer < (asteroid.lock()->GetRadius() + _colliderPlayer.lock()->GetRadius());
+            auto asteroidGO = asteroid->GetGameObjectPtr().lock();
+            //float distanceToPlayer = std::sqrt(std::pow(player->position.x,asteroidGO->position.x) + std::pow(player->position.y,asteroidGO->position.y));
+            auto distanceToPlayer = std::sqrt(std::pow(player->position.x - asteroidGO->position.x, 2) + std::pow(player->position.y - asteroidGO->position.y, 2));
+            bool checkPlayerCollision = distanceToPlayer < (asteroid->GetRadius() + _colliderPlayer.lock()->GetRadius());
 
             if(checkPlayerCollision) {
                 engine._root->RemoveChildren();
-                std::cout << "collision detected" << std::endl;
+                return;
             }
+
+
+            for (auto& lazerCollider : _collidersLazers) {
+                auto lazer = lazerCollider.lock();
+                if (!lazer) {
+                    // Skip if lazerCollider is expired
+                    continue;
+                }
+
+                auto lazerGO = lazer->GetGameObjectPtr().lock();
+                auto distanceToLazer = std::sqrt(std::pow(lazerGO->position.x - asteroidGO->position.x, 2) + std::pow(lazerGO->position.y - asteroidGO->position.y, 2));
+                bool checkLazerCollision = distanceToLazer < (asteroid->GetRadius() + lazer->GetRadius());
+
+                if (checkLazerCollision) {
+                    std::cout << "collision detected" << std::endl;
+
+                    //_collidersAsteroids.remove(asteroidCollider);
+                    //asteroidsParent->RemoveChild(asteroidGO);
+                    // the game crashes here at the line above
+                    // it's probably something with memory and pointers, I'm doing something dangerous
+                    // but time is up and I need to hand in in like 15 minutes
+                }
+            }
+
         }
     }
 
