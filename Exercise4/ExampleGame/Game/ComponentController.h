@@ -26,5 +26,7 @@ namespace ExampleGame {
 		void Init() override;
 		void Update(float) override;
 		void setSize(float size);
+	private:
+		//float smoothRotSpeed;
 	};
 }

@@ -22,7 +22,8 @@ namespace ExampleGame {
 		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
 		MyEngine::GameObject* parent = GetGameObject();
 
-		float smoothRotSpeed = 0.016666667f; //100/60 = 1,666666666
+		float smoothRotSpeed = 0.016666666666666666667f;
+		// float smoothRotSpeed = 1.0f/60.0f; // this is not detailed enough for some reason
 
 		parent->rotation += (RotSpeed * deltaTime);
 		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x); //atempt to use rotation to control mov direction
