@@ -58,6 +58,9 @@ class MyGame {
         std::list<std::weak_ptr<MyEngine::ColliderCircleComponent>> _collidersLazers = {};
         std::weak_ptr<MyEngine::ColliderCircleComponent> _colliderPlayer;
         void CheckCollisions();
+        bool gameOver = false;
+        void ReInitGame();
+        void MakeSteroids();
 
     };
 }

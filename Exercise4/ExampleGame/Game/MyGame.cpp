@@ -34,9 +34,10 @@
  * "Trogonometry for Game Programming" link in one of the slides. I have 2 hours til deadline
  * right now, so won't be able to implement any of that, but will start looking at it, look very promising.
  *
- * I managed to delete all object if you get hit by an asteroid, but my game crashes at line 246
+ * I managed to delete all object if you get hit by an asteroid, but my game crashes at line ~260
  *  of this file (asteroidsParent->RemoveChild(asteroidGO);) when I try to delete the current asteroid.
- *  The rest of the collision stuff I did not have time for. Enjoy <3
+ *  The rest of the collision stuff I did not have time for. Game Also breaks when I try to
+ *  make a new game with spacebar (commented out code) line ~183
  */
 
 namespace ExampleGame {
@@ -63,6 +64,13 @@ namespace ExampleGame {
 
         atlas = sre::SpriteAtlas::create("data/Asteroids.json", "data/Asteroids.png");
 
+        ReInitGame();
+        engine.Init();
+        MakeSteroids();
+
+    }
+
+    void MyGame::ReInitGame() {
         player = CreatePlayer();
 
 
@@ -70,9 +78,9 @@ namespace ExampleGame {
         lazerParent = engine.CreateGameObject("lazersParent");
         lazerParent->shouldRemoveChildrenAfterSeconds = true;
         lazerParent->secondsChildrenWillLive = 1;
+    }
 
-        engine.Init();
-
+    void MyGame::MakeSteroids () {
         for (int i = 1; i <= 5; ++i) InstantiateAsteroid();
         renderer.startEventLoop();
     }
@@ -168,7 +176,12 @@ namespace ExampleGame {
     bool MyGame::onKey(SDL_Event &event) {
             switch (event.key.keysym.sym) {
                 case SDLK_SPACE: {
-                    InstantiateLazer();
+                    if(!gameOver)
+                        InstantiateLazer();
+                    else {
+                        //ReInitGame();
+                        //MakeSteroids();
+                    }
                 }
                     break;
                 case SDLK_LEFT: {
@@ -224,6 +237,7 @@ namespace ExampleGame {
 
             if(checkPlayerCollision) {
                 engine._root->RemoveChildren();
+                gameOver = true;
                 return;
             }
 
@@ -243,7 +257,7 @@ namespace ExampleGame {
                     std::cout << "collision detected" << std::endl;
 
                     //_collidersAsteroids.remove(asteroidCollider);
-                    //asteroidsParent->RemoveChild(asteroidGO);
+                    //asteroidsParent->RemoveChild(asteroidGO); // here !
                     // the game crashes here at the line above
                     // it's probably something with memory and pointers, I'm doing something dangerous
                     // but time is up and I need to hand in in like 15 minutes
