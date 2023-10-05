@@ -2328,6 +2328,12 @@
 		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/main.cpp">
 			<Option target="MyProject_01"/>
 		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.h">
+			<Option target="MyEngine"/>
+		</Unit>
 		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.cpp">
 			<Option target="MyEngine"/>
 		</Unit>

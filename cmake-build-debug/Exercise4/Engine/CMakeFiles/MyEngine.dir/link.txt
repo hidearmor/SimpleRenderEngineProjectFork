@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libMyEngine.a  CMakeFiles/MyEngine.dir/Engine/Component.cpp.o CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc libMyEngine.a  CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o CMakeFiles/MyEngine.dir/Engine/Component.cpp.o CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib libMyEngine.a

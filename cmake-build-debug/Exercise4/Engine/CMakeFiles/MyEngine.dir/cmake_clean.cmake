@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o"
   "CMakeFiles/MyEngine.dir/Engine/Component.cpp.o"
   "CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o"
   "CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o"

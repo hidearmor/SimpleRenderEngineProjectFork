@@ -60,9 +60,22 @@ include Exercise4/Engine/CMakeFiles/MyEngine.dir/progress.make
 # Include the compile flags for this target's objects.
 include Exercise4/Engine/CMakeFiles/MyEngine.dir/flags.make
 
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: Exercise4/Engine/CMakeFiles/MyEngine.dir/flags.make
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o: ../Exercise4/Engine/Engine/ColliderCircleComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o"
+	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o -c /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp
+
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.i"
+	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp > CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.i
+
+Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.s"
+	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp -o CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.s
+
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o: Exercise4/Engine/CMakeFiles/MyEngine.dir/flags.make
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o: ../Exercise4/Engine/Engine/Component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o"
 	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyEngine.dir/Engine/Component.cpp.o -c /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.cpp
 
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.i: cmake_force
@@ -75,7 +88,7 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.s: cmake_force
 
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o: Exercise4/Engine/CMakeFiles/MyEngine.dir/flags.make
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o: ../Exercise4/Engine/Engine/GameObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o"
 	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o -c /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.cpp
 
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.i: cmake_force
@@ -88,7 +101,7 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.s: cmake_force
 
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o: Exercise4/Engine/CMakeFiles/MyEngine.dir/flags.make
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o: ../Exercise4/Engine/Engine/MyEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o"
 	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o -c /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.cpp
 
 Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.i: cmake_force
@@ -101,6 +114,7 @@ Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.s: cmake_force
 
 # Object files for target MyEngine
 MyEngine_OBJECTS = \
+"CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o" \
 "CMakeFiles/MyEngine.dir/Engine/Component.cpp.o" \
 "CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o" \
 "CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o"
@@ -108,12 +122,13 @@ MyEngine_OBJECTS = \
 # External object files for target MyEngine
 MyEngine_EXTERNAL_OBJECTS =
 
+Exercise4/Engine/libMyEngine.a: Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o
 Exercise4/Engine/libMyEngine.a: Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/Component.cpp.o
 Exercise4/Engine/libMyEngine.a: Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/GameObject.cpp.o
 Exercise4/Engine/libMyEngine.a: Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/MyEngine.cpp.o
 Exercise4/Engine/libMyEngine.a: Exercise4/Engine/CMakeFiles/MyEngine.dir/build.make
 Exercise4/Engine/libMyEngine.a: Exercise4/Engine/CMakeFiles/MyEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libMyEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libMyEngine.a"
 	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && $(CMAKE_COMMAND) -P CMakeFiles/MyEngine.dir/cmake_clean_target.cmake
 	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyEngine.dir/link.txt --verbose=$(VERBOSE)
 

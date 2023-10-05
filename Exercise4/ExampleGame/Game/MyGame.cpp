@@ -11,6 +11,28 @@
  * have simply prioritized doing more code instead of documenting.
  * Really hope it's readable for you guys :)
  * Much of it should be readable from method names etc.
+ *
+ * I tried to do as less as possible in MyGame.cpp and spread it out into other classes
+ * but I REALLY find working with subclasses and pointers a b**** in C++. It's really smart,
+ * it just doesn't stick with my way of thinking so it takes so LOOONG!
+ * But I have tried to extend more components and also extend the ComponentController
+ * with a PlayerController class but extending a class that implements an interface
+ * was something I couldn't do. Also I tried to make an observer pattern to do callbacks
+ * from game objects to an observer, but also this failed. These experiments were interesting
+ * - and I would say they should be viable ideas for structuring, so I'm really kind of sad that
+ * it didn't work out. I would like to take this up in the exercise classes maybe.
+ * For instance my way of deleting lazers after x seconds is just clunky, but I ended up doing
+ * it that way because I couldn't make the observer pattern work in C++.
+ *
+ * if you look at the update function of the ComponentController I use a smoother for the rotation
+ * to update it together with the movement direction. This was a hacky way of doing it and I would love some
+ * feedback on how I should have done it better.
+ *
+ * I have just now discovered that I have, for 40 hours lol, completely overlooked the
+ * "Trogonometry for Game Programming" link in one of the slides. I have 2 hours til deadline
+ * right now, so won't be able to implement any of that, but will start looking at it, look very promising.
+ *
+ * I
  */
 
 namespace ExampleGame {

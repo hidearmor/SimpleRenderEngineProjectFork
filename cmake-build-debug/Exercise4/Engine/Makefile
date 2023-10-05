@@ -174,6 +174,33 @@ MyEngine/fast:
 	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug && $(MAKE) -f Exercise4/Engine/CMakeFiles/MyEngine.dir/build.make Exercise4/Engine/CMakeFiles/MyEngine.dir/build
 .PHONY : MyEngine/fast
 
+Engine/ColliderCircleComponent.o: Engine/ColliderCircleComponent.cpp.o
+
+.PHONY : Engine/ColliderCircleComponent.o
+
+# target to build an object file
+Engine/ColliderCircleComponent.cpp.o:
+	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug && $(MAKE) -f Exercise4/Engine/CMakeFiles/MyEngine.dir/build.make Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.o
+.PHONY : Engine/ColliderCircleComponent.cpp.o
+
+Engine/ColliderCircleComponent.i: Engine/ColliderCircleComponent.cpp.i
+
+.PHONY : Engine/ColliderCircleComponent.i
+
+# target to preprocess a source file
+Engine/ColliderCircleComponent.cpp.i:
+	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug && $(MAKE) -f Exercise4/Engine/CMakeFiles/MyEngine.dir/build.make Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.i
+.PHONY : Engine/ColliderCircleComponent.cpp.i
+
+Engine/ColliderCircleComponent.s: Engine/ColliderCircleComponent.cpp.s
+
+.PHONY : Engine/ColliderCircleComponent.s
+
+# target to generate assembly for a file
+Engine/ColliderCircleComponent.cpp.s:
+	cd /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug && $(MAKE) -f Exercise4/Engine/CMakeFiles/MyEngine.dir/build.make Exercise4/Engine/CMakeFiles/MyEngine.dir/Engine/ColliderCircleComponent.cpp.s
+.PHONY : Engine/ColliderCircleComponent.cpp.s
+
 Engine/Component.o: Engine/Component.cpp.o
 
 .PHONY : Engine/Component.o
@@ -268,6 +295,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... Engine/ColliderCircleComponent.o"
+	@echo "... Engine/ColliderCircleComponent.i"
+	@echo "... Engine/ColliderCircleComponent.s"
 	@echo "... Engine/Component.o"
 	@echo "... Engine/Component.i"
 	@echo "... Engine/Component.s"

@@ -26,14 +26,14 @@ namespace ExampleGame {
 		 * I can't seem to find a perfect way of controlling my ship witout it slowly getting
 		 * the rotation off if you rotate in the same direction for a long time
 		 */
-		float smoothRotSpeed = 0.016666666666666666667f;
+		float smoothRotSpeed = 0.016666667f;
 		// float smoothRotSpeed = 1.0f/60.0f; // this is not detailed enough for some reason
 
 		parent->rotation += (RotSpeed * deltaTime);
 		//parent->rotation += std::atan2(MovDirection.y, MovDirection.x); //atempt to use rotation to control mov direction
 		// Convert rotation to direction vector
 		if(isPlayer) {
-			// we have done the -sin here to offset by 90 degrees left because the sprite was weird
+			// we have done the -sin here to offset by 90 degrees "left"
 			MovDirection = glm::vec2(-sin(smoothRotSpeed * (parent->rotation)), cos(smoothRotSpeed * (parent->rotation)));
 		}
 		parent->position += MovDirection * MovAmount * MovSpeed * deltaTime;
