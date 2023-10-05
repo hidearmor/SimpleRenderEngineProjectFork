@@ -22,6 +22,10 @@ namespace ExampleGame {
 		MyEngine::Engine* engine = MyEngine::Engine::GetInstance();
 		MyEngine::GameObject* parent = GetGameObject();
 
+		/*
+		 * I can't seem to find a perfect way of controlling my ship witout it slowly getting
+		 * the rotation off if you rotate in the same direction for a long time
+		 */
 		float smoothRotSpeed = 0.016666666666666666667f;
 		// float smoothRotSpeed = 1.0f/60.0f; // this is not detailed enough for some reason
 

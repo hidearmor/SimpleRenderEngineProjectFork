@@ -4,6 +4,15 @@
 #include "ComponentController.h"
 #include "ComponentRendererSprite.h"
 
+/*
+ * hey Chris & TA's
+ * I have not documented the code very well. This is simply because I have
+ * spent up towards 40 hours on the assignment. So I've learned a lot, but
+ * have simply prioritized doing more code instead of documenting.
+ * Really hope it's readable for you guys :)
+ * Much of it should be readable from method names etc.
+ */
+
 namespace ExampleGame {
 
     MyGame* MyGame::_instance = nullptr;
