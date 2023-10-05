@@ -92,9 +92,9 @@ namespace ExampleGame {
         componentController->SetMovementSpeed(0);
         componentController->isPlayer = true;
 
-        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
-        playerObject->AddComponent(Collider);
-        _colliderPlayer = Collider;                    // add to MyGame's collider-list
+        auto playerCollider = std::make_shared<MyEngine::ColliderCircleComponent>(10);
+        playerObject->AddComponent(playerCollider);
+        _colliderPlayer = playerCollider;                    // add to MyGame's collider-list
         return playerObject;
     }
 
@@ -102,31 +102,31 @@ namespace ExampleGame {
         std::shared_ptr<MyEngine::GameObject> asteroidObject =
                 instantiateGO("Asteroid", asteroidsParent, "meteorBrown_big1.png", -100);
         asteroidObject->RandomizePosition();
-        std::weak_ptr<ExampleGame::ComponentController> playerController = GetCC(asteroidObject);
-        playerController.lock().get()->RandomizeDirection();
+        std::weak_ptr<ExampleGame::ComponentController> asteroidController = GetCC(asteroidObject);
+        asteroidController.lock().get()->RandomizeDirection();
 
-        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
-        asteroidObject->AddComponent(Collider);
-        _collidersAsteroids.push_back(Collider);                     // add to MyGame's collider-list
+        auto asteroidCollider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
+        asteroidObject->AddComponent(asteroidCollider);
+        _collidersAsteroids.push_back(asteroidCollider);                     // add to MyGame's collider-list
     }
 
     void MyGame::InstantiateLazer() {
         std::shared_ptr<MyEngine::GameObject> lazerObject =
                 instantiateGO("Lazer", lazerParent, "laserBlue05.png", 0);
 
-        std::weak_ptr<ExampleGame::ComponentController> playerController = GetCC(player);
+        std::weak_ptr<ExampleGame::ComponentController> lazerController = GetCC(player);
         auto cc = GetCC(lazerObject).lock();
-        if (playerController.expired()) {
+        if (lazerController.expired()) {
             std::cout << "ComponentController not found!" << std::endl;
         } else {
-            auto dir = playerController.lock()->getMovDirection();
+            auto dir = lazerController.lock()->getMovDirection();
             cc.get()->SetMovementDirection(dir);
             lazerObject.get()->position = player.get()->position;
             lazerObject.get()->rotation = player.get()->rotation;
         }
         cc.get()->SetMovementSpeed(400);
 
-        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(50);
+        auto Collider = std::make_shared<MyEngine::ColliderCircleComponent>(3);
         lazerObject->AddComponent(Collider);
         _collidersLazers.push_back(Collider);                     // add to MyGame's collider-list
         //lazerObject.get()->DestroyInSeconds(1.0); //is not working
