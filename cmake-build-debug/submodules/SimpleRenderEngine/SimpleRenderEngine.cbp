@@ -5,7 +5,7 @@
 		<Option title="SimpleRenderEngine"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\SimpleRenderEngine\;CMake Files\submodules\SimpleRenderEngine\submodules\;CMake Files\submodules\SimpleRenderEngine\src\;CMake Files\submodules\SimpleRenderEngine\examples\;CMake Files\cmake\;CMake Files\project\;CMake Files\project\Box2DTestbed\;CMake Files\project\platformer\;CMake Files\project\particle_system\;CMake Files\project\gui\;CMake Files\Exercise3\;CMake Files\Exercise4\;CMake Files\Exercise4\Engine\;CMake Files\Exercise4\ExampleGame\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\SimpleRenderEngine\;CMake Files\submodules\SimpleRenderEngine\submodules\;CMake Files\submodules\SimpleRenderEngine\src\;CMake Files\submodules\SimpleRenderEngine\examples\;CMake Files\cmake\;CMake Files\project\;CMake Files\project\Box2DTestbed\;CMake Files\project\platformer\;CMake Files\project\particle_system\;CMake Files\project\gui\;CMake Files\Exercise6_jrya\;CMake Files\Exercise6_jrya\Engine\;CMake Files\Exercise6_jrya\ExampleGame\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/submodules/SimpleRenderEngine"/>
@@ -1545,17 +1545,14 @@
 		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/project/gui/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\project\gui\"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise3\"/>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Exercise6_jrya\"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise4\"/>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Exercise6_jrya\Engine\"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise4\Engine\"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise4\ExampleGame\"/>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Exercise6_jrya\ExampleGame\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

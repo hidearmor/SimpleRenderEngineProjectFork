@@ -563,19 +563,6 @@ SRE-Gui/fast:
 .PHONY : SRE-Gui/fast
 
 #=============================================================================
-# Target rules for targets named MyProject_01
-
-# Build rule for target.
-MyProject_01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MyProject_01
-.PHONY : MyProject_01
-
-# fast build rule for target.
-MyProject_01/fast:
-	$(MAKE) -f Exercise3/CMakeFiles/MyProject_01.dir/build.make Exercise3/CMakeFiles/MyProject_01.dir/build
-.PHONY : MyProject_01/fast
-
-#=============================================================================
 # Target rules for targets named MyEngine
 
 # Build rule for target.
@@ -585,7 +572,7 @@ MyEngine: cmake_check_build_system
 
 # fast build rule for target.
 MyEngine/fast:
-	$(MAKE) -f Exercise4/Engine/CMakeFiles/MyEngine.dir/build.make Exercise4/Engine/CMakeFiles/MyEngine.dir/build
+	$(MAKE) -f Exercise6_jrya/Engine/CMakeFiles/MyEngine.dir/build.make Exercise6_jrya/Engine/CMakeFiles/MyEngine.dir/build
 .PHONY : MyEngine/fast
 
 #=============================================================================
@@ -598,7 +585,7 @@ MyGame: cmake_check_build_system
 
 # fast build rule for target.
 MyGame/fast:
-	$(MAKE) -f Exercise4/ExampleGame/CMakeFiles/MyGame.dir/build.make Exercise4/ExampleGame/CMakeFiles/MyGame.dir/build
+	$(MAKE) -f Exercise6_jrya/ExampleGame/CMakeFiles/MyGame.dir/build.make Exercise6_jrya/ExampleGame/CMakeFiles/MyGame.dir/build
 .PHONY : MyGame/fast
 
 # Help Target
@@ -644,7 +631,6 @@ help:
 	@echo "... SRE-Platformer"
 	@echo "... SRE-ParticleSystem"
 	@echo "... SRE-Gui"
-	@echo "... MyProject_01"
 	@echo "... MyEngine"
 	@echo "... MyGame"
 .PHONY : help

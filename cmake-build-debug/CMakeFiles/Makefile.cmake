@@ -30,10 +30,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.13/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.13/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
-  "../Exercise3/CMakeLists.txt"
-  "../Exercise4/CMakeLists.txt"
-  "../Exercise4/Engine/CMakeLists.txt"
-  "../Exercise4/ExampleGame/CMakeLists.txt"
+  "../Exercise6_jrya/CMakeLists.txt"
+  "../Exercise6_jrya/Engine/CMakeLists.txt"
+  "../Exercise6_jrya/ExampleGame/CMakeLists.txt"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
   "../cmake/FindSDL2.cmake"
@@ -68,10 +67,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "project/platformer/CMakeFiles/CMakeDirectoryInformation.cmake"
   "project/particle_system/CMakeFiles/CMakeDirectoryInformation.cmake"
   "project/gui/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Exercise3/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Exercise4/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Exercise4/Engine/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Exercise4/ExampleGame/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Exercise6_jrya/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Exercise6_jrya/Engine/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Exercise6_jrya/ExampleGame/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -107,7 +105,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "project/platformer/CMakeFiles/SRE-Platformer.dir/DependInfo.cmake"
   "project/particle_system/CMakeFiles/SRE-ParticleSystem.dir/DependInfo.cmake"
   "project/gui/CMakeFiles/SRE-Gui.dir/DependInfo.cmake"
-  "Exercise3/CMakeFiles/MyProject_01.dir/DependInfo.cmake"
-  "Exercise4/Engine/CMakeFiles/MyEngine.dir/DependInfo.cmake"
-  "Exercise4/ExampleGame/CMakeFiles/MyGame.dir/DependInfo.cmake"
+  "Exercise6_jrya/Engine/CMakeFiles/MyEngine.dir/DependInfo.cmake"
+  "Exercise6_jrya/ExampleGame/CMakeFiles/MyGame.dir/DependInfo.cmake"
   )

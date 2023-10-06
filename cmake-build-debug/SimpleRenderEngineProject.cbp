@@ -5,7 +5,7 @@
 		<Option title="SimpleRenderEngineProject"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\SimpleRenderEngine\;CMake Files\submodules\SimpleRenderEngine\submodules\;CMake Files\submodules\SimpleRenderEngine\src\;CMake Files\submodules\SimpleRenderEngine\examples\;CMake Files\cmake\;CMake Files\project\;CMake Files\project\Box2DTestbed\;CMake Files\project\platformer\;CMake Files\project\particle_system\;CMake Files\project\gui\;CMake Files\Exercise3\;CMake Files\Exercise4\;CMake Files\Exercise4\Engine\;CMake Files\Exercise4\ExampleGame\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\SimpleRenderEngine\;CMake Files\submodules\SimpleRenderEngine\submodules\;CMake Files\submodules\SimpleRenderEngine\src\;CMake Files\submodules\SimpleRenderEngine\examples\;CMake Files\cmake\;CMake Files\project\;CMake Files\project\Box2DTestbed\;CMake Files\project\platformer\;CMake Files\project\particle_system\;CMake Files\project\gui\;CMake Files\Exercise6_jrya\;CMake Files\Exercise6_jrya\Engine\;CMake Files\Exercise6_jrya\ExampleGame\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug"/>
@@ -2105,73 +2105,9 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/project/gui/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MyProject_01">
-				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/MyProject_01" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
-					<Add directory="/Library/Frameworks/SDL2_mixer.framework/Headers"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/thirdparty/macOS/Box2D/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/thirdparty/macOS/Lua/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/thirdparty/All/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/imgui"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/glm"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/picojson"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 MyProject_01"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="MyProject_01/fast">
-				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/MyProject_01" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
-					<Add directory="/Library/Frameworks/SDL2_mixer.framework/Headers"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/thirdparty/macOS/Box2D/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/thirdparty/macOS/Lua/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/thirdparty/All/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/include"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/imgui"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/glm"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/picojson"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 MyProject_01/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise3/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="MyEngine">
-				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/libMyEngine.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine"/>
+				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/libMyEngine.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -2188,7 +2124,8 @@
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/imgui"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/glm"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/picojson"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -2196,15 +2133,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 MyEngine"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 MyEngine"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MyEngine/fast">
-				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/libMyEngine.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine"/>
+				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/libMyEngine.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -2221,7 +2158,8 @@
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/imgui"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/glm"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/picojson"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -2229,15 +2167,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 MyEngine/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/Engine/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 MyEngine/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/Engine/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MyGame">
-				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/MyGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame"/>
+				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/MyGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -2254,8 +2192,9 @@
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/imgui"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/glm"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/picojson"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -2263,15 +2202,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 MyGame"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 MyGame"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MyGame/fast">
-				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/MyGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame"/>
+				<Option output="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/MyGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -2288,8 +2227,9 @@
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/imgui"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/glm"/>
 					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/submodules/SimpleRenderEngine/submodules/picojson"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine"/>
-					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine"/>
+					<Add directory="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -2297,86 +2237,164 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 MyGame/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise4/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 MyGame/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake-build-debug/Exercise6_jrya/ExampleGame/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/Component.cpp">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/GameEngine.cpp">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/GameEngine.h">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/GameObject.cpp">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/ITUGames.h">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/MyGame.h">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/Player.cpp">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/src/main.cpp">
-			<Option target="MyProject_01"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/allocators.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/document.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/encodedstream.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/encodings.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/error/en.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/GameObject.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/error/error.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Logger.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/filereadstream.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/filewritestream.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/fwd.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Observer.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/biginteger.h">
 			<Option target="MyEngine"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/diyfp.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/dtoa.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/ieee754.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/itoa.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/meta.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/pow10.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/regex.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/stack.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/strfunc.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/strtod.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/internal/swap.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/istreamwrapper.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/memorybuffer.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/memorystream.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/msinttypes/inttypes.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/msinttypes/stdint.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/ostreamwrapper.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/pointer.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/prettywriter.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/rapidjson.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/reader.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/schema.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/stream.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/stringbuffer.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/3rdParty/rapidjson/writer.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/Component.cpp">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/Component.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/ComponentFactory.cpp">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/ComponentFactory.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/GameObject.cpp">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/GameObject.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/Logger.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/MyEngine.cpp">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/Engine/MyEngine.h">
+			<Option target="MyEngine"/>
+		</Unit>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/Game/ComponentCamera.cpp">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentController.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/Game/ComponentCamera.h">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentRendererSprite.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/Game/ComponentController.cpp">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/ComponentRendererSprite.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/Game/ComponentController.h">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/MyGame.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/Game/ComponentRendererMesh.cpp">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/Game/MyGame.h">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/Game/ComponentRendererMesh.h">
 			<Option target="MyGame"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/main.cpp">
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/main.cpp">
 			<Option target="MyGame"/>
 		</Unit>
 		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/project/Box2DTestbed/Framework/DebugDraw.cpp">
@@ -2964,17 +2982,14 @@
 		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/project/gui/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\project\gui\"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise3/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise3\"/>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Exercise6_jrya\"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise4\"/>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/Engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Exercise6_jrya\Engine\"/>
 		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise4\Engine\"/>
-		</Unit>
-		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/ExampleGame/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Exercise4\ExampleGame\"/>
+		<Unit filename="/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise6_jrya/ExampleGame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Exercise6_jrya\ExampleGame\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
