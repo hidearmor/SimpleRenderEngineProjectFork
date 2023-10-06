@@ -179,7 +179,8 @@ namespace ExampleGame {
                     if(!gameOver)
                         InstantiateLazer();
                     else {
-                        //ReInitGame();
+                        ReInitGame();
+                        gameOver = false;
                         //MakeSteroids();
                     }
                 }
@@ -218,6 +219,9 @@ namespace ExampleGame {
 
     void MyGame::Update(float deltaTime) {
         engine.Update(deltaTime);
+        if(gameOver) {
+            GameOver();
+        }
         CheckCollisions();
     }
 
@@ -273,6 +277,15 @@ namespace ExampleGame {
 
     void MyGame::RemoveAsteroids(){
         asteroidsParent->RemoveChildren();
+    }
+
+    void MyGame::GameOver(){
+        _collidersLazers.clear();
+        _collidersAsteroids.clear();
+        _colliderPlayer.lock() = nullptr;
+        player = nullptr;
+        asteroidsParent = nullptr;
+        lazerParent = nullptr;
     }
 
     //tried my hand at an observer pattern implementation for destruction after xx seconds. Couldn't make it work

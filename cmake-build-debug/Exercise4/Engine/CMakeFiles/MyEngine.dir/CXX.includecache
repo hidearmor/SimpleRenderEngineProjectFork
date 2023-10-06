@@ -1068,16 +1068,6 @@ SDL2/begin_code.h
 SDL2/close_code.h
 -
 
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.cpp
-ColliderCircleComponent.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.h
-
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/ColliderCircleComponent.h
-Component.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h
-MyEngine.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
-
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/Component.h
 memory
 -
@@ -1131,14 +1121,6 @@ iostream
 -
 stdarg.h
 -
-
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.cpp
-MyEngine.h
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
-random
--
-sre/RenderPass.hpp
-/Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/sre/RenderPass.hpp
 
 /Users/jonas2.0/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Exercise4/Engine/Engine/MyEngine.h
 chrono

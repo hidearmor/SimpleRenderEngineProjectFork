@@ -26,6 +26,8 @@ class MyGame {
 
         void Render();
 
+        void GameOver();
+
         std::shared_ptr<MyEngine::GameObject> CreatePlayer();
 
         bool onKey(SDL_Event &event);
