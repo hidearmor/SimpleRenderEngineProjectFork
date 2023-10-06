@@ -181,7 +181,7 @@ namespace ExampleGame {
                     else {
                         ReInitGame();
                         gameOver = false;
-                        //MakeSteroids();
+                        MakeSteroids();
                     }
                 }
                     break;
