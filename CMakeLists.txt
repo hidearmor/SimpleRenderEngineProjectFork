@@ -191,5 +191,5 @@ if (USE_SRE_PROJECT_EXAMPLES)
 add_subdirectory(project)
 endif(USE_SRE_PROJECT_EXAMPLES)
 
-add_subdirectory(Exercise3)
 add_subdirectory(Exercise4)
+add_subdirectory(Exercise6_jrya)
