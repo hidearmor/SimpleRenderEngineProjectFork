@@ -28,6 +28,8 @@ namespace MyEngine {
 			void Update(float);
 			void Render();
 
+			//std::list<std::shared_ptr<GameObject>> deleteThisFrame;
+
 			float GetFPS() const { return 1.0 / time_elapsed.count(); }
 			float GetTimeElapsedMs() const { return 1000 * time_elapsed.count(); }
 			float GetTimeComputationMs() const { return 1000 * time_computation.count(); }
