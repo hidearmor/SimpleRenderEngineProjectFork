@@ -37,6 +37,7 @@ class MyGame {
 
         MyEngine::Engine engine;
 
+        //glm::vec2 window_size = glm::vec2(800, 600);
         glm::vec2 window_size = glm::vec2(800, 600);
         sre::SDLRenderer renderer;
         sre::Camera camera;
