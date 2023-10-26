@@ -1,0 +1,296 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      Build started 15/10/2023 19.57.38.
+      Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\3.28.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\3.28.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x86\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\3.28.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.54
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/3.28.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-lgjmi4"
+      binary: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-lgjmi4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-lgjmi4'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_1854e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 15/10/2023 19.57.39.
+        Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-lgjmi4\\cmTC_1854e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1854e.dir\\Debug\\".
+          Creating directory "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-lgjmi4\\Debug\\".
+          Creating directory "cmTC_1854e.dir\\Debug\\cmTC_1854e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1854e.dir\\Debug\\cmTC_1854e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1854e.dir\\Debug\\\\" /Fd"cmTC_1854e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30148 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          CMakeCXXCompilerABI.cpp
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1854e.dir\\Debug\\\\" /Fd"cmTC_1854e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-lgjmi4\\Debug\\cmTC_1854e.exe" /INCREMENTAL /ILK:"cmTC_1854e.dir\\Debug\\cmTC_1854e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-lgjmi4/Debug/cmTC_1854e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-lgjmi4/Debug/cmTC_1854e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_1854e.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1854e.vcxproj -> C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-lgjmi4\\Debug\\cmTC_1854e.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1854e.dir\\Debug\\cmTC_1854e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1854e.dir\\Debug\\cmTC_1854e.tlog\\cmTC_1854e.lastbuildstate".
+        Done Building Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-lgjmi4\\cmTC_1854e.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "cmake/FindSDL2.cmake:118 (FIND_PACKAGE)"
+      - "submodules/SimpleRenderEngine/CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-4nrcab"
+      binary: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-4nrcab"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake;C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-4nrcab'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_6fd2a.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 15/10/2023 19.57.39.
+        Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\cmTC_6fd2a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6fd2a.dir\\Debug\\".
+          Creating directory "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\Debug\\".
+          Creating directory "cmTC_6fd2a.dir\\Debug\\cmTC_6fd2a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6fd2a.dir\\Debug\\cmTC_6fd2a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6fd2a.dir\\Debug\\\\" /Fd"cmTC_6fd2a.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30148 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          src.cxx
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6fd2a.dir\\Debug\\\\" /Fd"cmTC_6fd2a.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\src.cxx"
+        C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\src.cxx(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\cmTC_6fd2a.vcxproj]
+        Done Building Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\cmTC_6fd2a.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\cmTC_6fd2a.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\src.cxx(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-4nrcab\\cmTC_6fd2a.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.22
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "cmake/FindSDL2.cmake:118 (FIND_PACKAGE)"
+      - "submodules/SimpleRenderEngine/CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-54e45a"
+      binary: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-54e45a"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake;C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-54e45a'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_e59d9.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 15/10/2023 19.57.40.
+        Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\cmTC_e59d9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e59d9.dir\\Debug\\".
+          Creating directory "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\Debug\\".
+          Creating directory "cmTC_e59d9.dir\\Debug\\cmTC_e59d9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e59d9.dir\\Debug\\cmTC_e59d9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e59d9.dir\\Debug\\\\" /Fd"cmTC_e59d9.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30148 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          CheckFunctionExists.cxx
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e59d9.dir\\Debug\\\\" /Fd"cmTC_e59d9.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\CheckFunctionExists.cxx"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\Debug\\cmTC_e59d9.exe" /INCREMENTAL /ILK:"cmTC_e59d9.dir\\Debug\\cmTC_e59d9.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-54e45a/Debug/cmTC_e59d9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-54e45a/Debug/cmTC_e59d9.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_e59d9.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\cmTC_e59d9.vcxproj]
+        Done Building Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\cmTC_e59d9.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\cmTC_e59d9.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-54e45a\\cmTC_e59d9.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "cmake/FindSDL2.cmake:118 (FIND_PACKAGE)"
+      - "submodules/SimpleRenderEngine/CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-w02oxg"
+      binary: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-w02oxg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake;C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/cmake"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-w02oxg'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_abc2b.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 15/10/2023 19.57.40.
+        Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\cmTC_abc2b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_abc2b.dir\\Debug\\".
+          Creating directory "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\Debug\\".
+          Creating directory "cmTC_abc2b.dir\\Debug\\cmTC_abc2b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_abc2b.dir\\Debug\\cmTC_abc2b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_abc2b.dir\\Debug\\\\" /Fd"cmTC_abc2b.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30148 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          CheckFunctionExists.cxx
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_abc2b.dir\\Debug\\\\" /Fd"cmTC_abc2b.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\CheckFunctionExists.cxx"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\Debug\\cmTC_abc2b.exe" /INCREMENTAL /ILK:"cmTC_abc2b.dir\\Debug\\cmTC_abc2b.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-w02oxg/Debug/cmTC_abc2b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Jonas/Documents/MyDocuments/ITU/GP/RenderEngineFork/SimpleRenderEngineProjectFork/Binaries/CMakeFiles/CMakeScratch/TryCompile-w02oxg/Debug/cmTC_abc2b.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_abc2b.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\cmTC_abc2b.vcxproj]
+        Done Building Project "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\cmTC_abc2b.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\cmTC_abc2b.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Jonas\\Documents\\MyDocuments\\ITU\\GP\\RenderEngineFork\\SimpleRenderEngineProjectFork\\Binaries\\CMakeFiles\\CMakeScratch\\TryCompile-w02oxg\\cmTC_abc2b.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.27
+        
+      exitCode: 1
+...

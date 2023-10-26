@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\Jonas\Documents\MyDocuments\ITU\GP\RenderEngineFork\SimpleRenderEngineProjectFork\Binaries\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Jonas\Documents\MyDocuments\ITU\GP\RenderEngineFork\SimpleRenderEngineProjectFork\Binaries\submodules\SimpleRenderEngine\examples\Debug\SRE-Example-11_sprite-example.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

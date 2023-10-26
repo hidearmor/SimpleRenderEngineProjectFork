@@ -191,4 +191,5 @@ if (USE_SRE_PROJECT_EXAMPLES)
 add_subdirectory(project)
 endif(USE_SRE_PROJECT_EXAMPLES)
 
-add_subdirectory(Exercise6_jrya)
+add_subdirectory(Exercise6/ExampleGame)
+add_subdirectory(Exercise6/Engine)
